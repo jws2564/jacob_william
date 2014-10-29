@@ -1,0 +1,85 @@
+.portfolio-archive{
+	
+	h2{
+		margin-bottom: 15px;
+		display: block;
+	}
+	
+	h2 a{
+		color: $gray;
+	}
+
+	.images{
+		width: 60%;
+		overflow: hidden;
+		float: left;
+		margin-bottom: 20px;
+		.rectangle{
+			width: 100%;
+		}
+	}
+	
+	a.portfolio-more{
+	    background: url("../../images/circle_large.png") no-repeat scroll 0 0 transparent;
+	    display: block;
+	    float: left;
+	    margin-left: 150px;
+	    height: 150px;
+	    margin-top: 15px;
+	    width: 150px;
+	}
+	
+	.excerpt{
+		clear: left;
+	}
+
+	.filters{
+		border-top: 1px solid $gray;
+		border-bottom: 1px solid $gray;
+		overflow: hidden;
+		margin-top: 10px;
+		.title{
+			color: white; 
+			background: $gray;
+			padding: 15px 20px;
+			font-family: $body-copy-regular;
+			float: left;
+		}
+		.filter{
+			float: left; 
+			background: $light-gray;
+			color: white;
+			font-family: $body-copy-regular;
+			padding: 10px;
+			cursor: pointer;
+			margin: 5px 0 5px 10px;
+		}
+	}
+	.view{
+		border-bottom: 1px solid $gray;
+		overflow: hidden;
+		margin-top: 30px;
+		div{
+			float: right;
+			padding: 8px 20px;
+			margin-left: 3px;
+			background: $gray;
+			color: white;
+			cursor: pointer;
+			font-family: $body-copy-regular;
+		}
+		.active{
+			background: $green;
+		}
+	}
+	
+	.items{
+		margin-top: 35px;
+		padding: 0 20px;
+		.item {
+		    border-bottom: 1px solid $gray;
+		    margin-bottom: 40px;
+		    padding-bottom: 20px;
+		}
+	}
+}

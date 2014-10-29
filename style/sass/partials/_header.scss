@@ -1,0 +1,54 @@
+div.one-col header.main nav {
+	width: 625px;
+}
+
+header.zig{
+	background: url("../../images/zig.png") no-repeat right 1px transparent;
+}
+
+header.main {
+			overflow: hidden;
+			a.logo {
+			    background: url("../../images/jacob.png") no-repeat scroll -4px 14px transparent;
+			    display: block;
+			    height: 177px;
+			    margin-bottom: 12px;
+			    padding-top: 14px;
+			    width: 179px;
+			    @media screen and (max-width: 900px){
+					border-bottom: 1px solid $gray;
+					background-position: 0px 14px;
+				}
+			}
+			
+			nav{
+				border-top: 1px solid $gray;
+				@media screen and (max-width: 900px){
+					border-top: 0 none;
+				}
+				li {
+					float:left;
+					a {
+						color: $gray;
+						font-family: $body-copy-regular;
+						padding: 15px 0 15px; 
+						display: block;
+						text-decoration: none;
+						font-size: .9em;
+						transition: .5s ease color;
+						margin-right: 20px; 
+						text-transform: lowercase;
+					}
+					a:hover{
+						color: $green;
+					}
+				}
+				
+				li.current-menu-item{
+					background: url("../../images/arrow.png") 0 15px no-repeat transparent;
+					a {
+						padding-left: 10px;
+					}
+				}
+			}
+		}

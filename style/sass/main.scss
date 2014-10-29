@@ -1,0 +1,9 @@
+// Modules and Variables
+@import "partials/base"; //imports for all mixins + global project variables
+
+// Partials
+
+div.main-wrapper{
+	max-width: $max-width;
+	margin: 0 auto;
+}

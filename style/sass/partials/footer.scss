@@ -1,0 +1,19 @@
+div.one-col footer{
+	top: -13px;
+	max-width: 629px;
+}
+
+footer{	
+		clear: both;
+		border-bottom: 1px solid $gray;
+		color: $gray;
+		font-family: $body-copy-regular;
+		font-size: .5em;
+		letter-spacing: 5px;
+		padding-bottom: 3px;
+		position: relative;
+		@media screen and (max-width: 1000px){
+			border-bottom: 0 none;
+			top: -9px;
+		}
+	}

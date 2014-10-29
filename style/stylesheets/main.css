@@ -1,0 +1,574 @@
+/* line 5, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Vegur";
+  src: url('../fonts/vegur-regular-webfont.eot?1413090908');
+  src: url('../fonts/vegur-regular-webfont.eot?&1413090908#iefix') format('embedded-opentype'), url('../fonts/vegur-regular-webfont.woff?1413090908') format('woff'), url('../fonts/vegur-regular-webfont.ttf?1413090908') format('truetype'), url('../fonts/vegur-regular-webfont.svg?1413090908') format('svg');
+}
+@font-face {
+  font-family: "Vegur Light";
+  src: url('../fonts/vegur-light-webfont.eot?1413090908');
+  src: url('../fonts/vegur-light-webfont.eot?&1413090908#iefix') format('embedded-opentype'), url('../fonts/vegur-light-webfont.woff?1413090908') format('woff'), url('../fonts/vegur-light-webfont.ttf?1413090908') format('truetype'), url('../fonts/vegur-light-webfont.svg?1413090908') format('svg');
+}
+@font-face {
+  font-family: "Vegur Bold";
+  src: url('../fonts/vegur-bold-webfont.eot?1413090908');
+  src: url('../fonts/vegur-bold-webfont.eot?&1413090908#iefix') format('embedded-opentype'), url('../fonts/vegur-bold-webfont.woff?1413090908') format('woff'), url('../fonts/vegur-bold-webfont.ttf?1413090908') format('truetype'), url('../fonts/vegur-bold-webfont.svg?1413090908') format('svg');
+}
+/* line 10, ../sass/partials/_typography.scss */
+p, h1, h2, h3, h4, a {
+  font-family: Vegur;
+}
+
+/* line 14, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 3em;
+  color: #d8df21;
+}
+
+/* line 19, ../sass/partials/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 23, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 1.1em;
+}
+
+/* line 1, ../sass/partials/_one-col.scss */
+a {
+  color: #d8df21;
+  text-decoration: none;
+}
+
+/* line 6, ../sass/partials/_one-col.scss */
+div.one-col {
+  position: relative;
+}
+@media screen and (max-width: 1080px) {
+  /* line 6, ../sass/partials/_one-col.scss */
+  div.one-col {
+    padding: 0 35px;
+  }
+}
+@media screen and (max-width: 830px) {
+  /* line 6, ../sass/partials/_one-col.scss */
+  div.one-col {
+    overflow: hidden;
+  }
+}
+/* line 14, ../sass/partials/_one-col.scss */
+div.one-col div.left {
+  background: url("../../images/zigzag.png") no-repeat scroll 610px -4px transparent;
+  height: 745px;
+}
+@media screen and (max-width: 1010px) {
+  /* line 14, ../sass/partials/_one-col.scss */
+  div.one-col div.left {
+    background: none;
+  }
+}
+/* line 20, ../sass/partials/_one-col.scss */
+div.one-col div.left .content {
+  clear: both;
+  max-width: 730px;
+  margin: 0;
+}
+@media screen and (max-width: 960px) {
+  /* line 20, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content {
+    max-width: 55%;
+  }
+}
+/* line 27, ../sass/partials/_one-col.scss */
+div.one-col div.left .content #home-content {
+  margin-top: 225px;
+  margin-bottom: 119px;
+  overflow: hidden;
+  max-width: 664px;
+}
+@media screen and (max-width: 960px) {
+  /* line 27, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content #home-content {
+    margin-bottom: 45px;
+    margin-top: 180px;
+  }
+}
+/* line 36, ../sass/partials/_one-col.scss */
+div.one-col div.left .content #home-content #developer, div.one-col div.left .content #home-content #designer {
+  text-decoration: none;
+  color: #d8df21;
+  font-family: Vegur;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #323232;
+  float: left;
+  font-size: 3em;
+  height: 32px;
+  line-height: 35px;
+  text-indent: -4px;
+  letter-spacing: 10px;
+}
+@media screen and (max-width: 960px) {
+  /* line 36, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content #home-content #developer, div.one-col div.left .content #home-content #designer {
+    float: none;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 830px) {
+  /* line 36, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content #home-content #developer, div.one-col div.left .content #home-content #designer {
+    margin: 0;
+  }
+}
+/* line 57, ../sass/partials/_one-col.scss */
+div.one-col div.left .content #home-content #designer {
+  width: 264px;
+}
+/* line 60, ../sass/partials/_one-col.scss */
+div.one-col div.left .content #home-content #developer {
+  width: 306px;
+}
+/* line 63, ../sass/partials/_one-col.scss */
+div.one-col div.left .content #home-content .line {
+  border-top: 1px solid;
+  height: 1px;
+  margin-left: 481px;
+  width: 183px;
+}
+@media screen and (max-width: 1000px) {
+  /* line 63, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content #home-content .line {
+    display: none;
+  }
+}
+/* line 72, ../sass/partials/_one-col.scss */
+div.one-col div.left .content #home-content #designer, div.one-col div.left .content #home-content .line {
+  margin-top: 33px;
+}
+/* line 76, ../sass/partials/_one-col.scss */
+div.one-col div.left .content .cta {
+  #border-bottom: 1px solid #323232;
+  height: 44px;
+  margin-right: 36px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 960px) {
+  /* line 76, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content .cta {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 830px) {
+  /* line 76, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content .cta {
+    margin: 0;
+  }
+}
+/* line 89, ../sass/partials/_one-col.scss */
+div.one-col div.left .content .cta > a {
+  background: url("../../images/circle.png") no-repeat scroll right 1px transparent;
+  color: #323232;
+  #display: block;
+  float: right;
+  font-family: Vegur;
+  font-size: 1.2em;
+  height: 84px;
+  line-height: 89px;
+  margin-right: 50px;
+  text-decoration: none;
+  width: 201px;
+  opacity: 0;
+  -moz-animation: fade 4s ease 1 1s;
+  -webkit-animation: fade 4s ease 1 1s;
+  animation: fade 4s ease 1 1s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-transition: ease 0.5s color;
+  -o-transition: ease 0.5s color;
+  -webkit-transition: ease 0.5s color;
+  transition: ease 0.5s color;
+}
+@media screen and (max-width: 830px) {
+  /* line 89, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content .cta > a {
+    float: left;
+    margin-top: 35px;
+  }
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 114, ../sass/partials/_one-col.scss */
+div.one-col div.left .content .cta > a:hover {
+  color: #d8df21;
+}
+@media screen and (max-width: 1000px) {
+  /* line 20, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content {
+    max-width: 70%;
+  }
+}
+/* line 123, ../sass/partials/_one-col.scss */
+div.one-col div.left .content.one-col {
+  max-width: 600px;
+  padding: 25px;
+}
+/* line 126, ../sass/partials/_one-col.scss */
+div.one-col div.left .content.one-col .text {
+  padding-left: 15px;
+}
+/* line 129, ../sass/partials/_one-col.scss */
+div.one-col div.left .content.one-col h1 {
+  margin-bottom: 10px;
+  color: #d8df21;
+}
+/* line 133, ../sass/partials/_one-col.scss */
+div.one-col div.left .content.one-col p {
+  padding: 12px 0;
+}
+/* line 140, ../sass/partials/_one-col.scss */
+div.one-col .right {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  -moz-animation: move-image 1s ease 1;
+  -webkit-animation: move-image 1s ease 1;
+  animation: move-image 1s ease 1;
+}
+@-moz-keyframes move-image {
+  0% {
+    right: -30px;
+  }
+  100% {
+    right: -2px;
+  }
+}
+@-webkit-keyframes move-image {
+  0% {
+    right: -30px;
+  }
+  100% {
+    right: -2px;
+  }
+}
+@keyframes move-image {
+  0% {
+    right: -30px;
+  }
+  100% {
+    right: -2px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 140, ../sass/partials/_one-col.scss */
+  div.one-col .right {
+    -moz-animation: none;
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+@media screen and (max-width: 710px) {
+  /* line 140, ../sass/partials/_one-col.scss */
+  div.one-col .right {
+    right: -52px;
+  }
+}
+/* line 159, ../sass/partials/_one-col.scss */
+div.one-col .right .jacob-william span {
+  bottom: 10px;
+  color: white;
+  position: absolute;
+  right: 24px;
+  font-family: Vegur;
+}
+@media screen and (max-width: 710px) {
+  /* line 159, ../sass/partials/_one-col.scss */
+  div.one-col .right .jacob-william span {
+    right: -66px;
+  }
+}
+
+/* line 3, ../sass/partials/_portfolio.scss */
+.portfolio-archive h2 {
+  margin-bottom: 15px;
+  display: block;
+}
+/* line 8, ../sass/partials/_portfolio.scss */
+.portfolio-archive h2 a {
+  color: #323232;
+}
+/* line 12, ../sass/partials/_portfolio.scss */
+.portfolio-archive .images {
+  width: 60%;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 17, ../sass/partials/_portfolio.scss */
+.portfolio-archive .images .rectangle {
+  width: 100%;
+}
+/* line 22, ../sass/partials/_portfolio.scss */
+.portfolio-archive a.portfolio-more {
+  background: url("../../images/circle_large.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  float: left;
+  margin-left: 150px;
+  height: 150px;
+  margin-top: 15px;
+  width: 150px;
+}
+/* line 32, ../sass/partials/_portfolio.scss */
+.portfolio-archive .excerpt {
+  clear: left;
+}
+/* line 36, ../sass/partials/_portfolio.scss */
+.portfolio-archive .filters {
+  border-top: 1px solid #323232;
+  border-bottom: 1px solid #323232;
+  overflow: hidden;
+  margin-top: 10px;
+}
+/* line 41, ../sass/partials/_portfolio.scss */
+.portfolio-archive .filters .title {
+  color: white;
+  background: #323232;
+  padding: 15px 20px;
+  font-family: Vegur;
+  float: left;
+}
+/* line 48, ../sass/partials/_portfolio.scss */
+.portfolio-archive .filters .filter {
+  float: left;
+  background: #656565;
+  color: white;
+  font-family: Vegur;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px 0 5px 10px;
+}
+/* line 58, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view {
+  border-bottom: 1px solid #323232;
+  overflow: hidden;
+  margin-top: 30px;
+}
+/* line 62, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view div {
+  float: right;
+  padding: 8px 20px;
+  margin-left: 3px;
+  background: #323232;
+  color: white;
+  cursor: pointer;
+  font-family: Vegur;
+}
+/* line 71, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view .active {
+  background: #d8df21;
+}
+/* line 76, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items {
+  margin-top: 35px;
+  padding: 0 20px;
+}
+/* line 79, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item {
+  border-bottom: 1px solid #323232;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+/* line 1, ../sass/partials/_normal.scss */
+.content {
+  margin: 30px 15px;
+}
+
+/* line 1, ../sass/partials/_header.scss */
+div.one-col header.main nav {
+  width: 625px;
+}
+
+/* line 5, ../sass/partials/_header.scss */
+header.zig {
+  background: url("../../images/zig.png") no-repeat right 1px transparent;
+}
+
+/* line 9, ../sass/partials/_header.scss */
+header.main {
+  overflow: hidden;
+}
+/* line 11, ../sass/partials/_header.scss */
+header.main a.logo {
+  background: url("../../images/jacob.png") no-repeat scroll -4px 14px transparent;
+  display: block;
+  height: 177px;
+  margin-bottom: 12px;
+  padding-top: 14px;
+  width: 179px;
+}
+@media screen and (max-width: 900px) {
+  /* line 11, ../sass/partials/_header.scss */
+  header.main a.logo {
+    border-bottom: 1px solid #323232;
+    background-position: 0px 14px;
+  }
+}
+/* line 24, ../sass/partials/_header.scss */
+header.main nav {
+  border-top: 1px solid #323232;
+}
+@media screen and (max-width: 900px) {
+  /* line 24, ../sass/partials/_header.scss */
+  header.main nav {
+    border-top: 0 none;
+  }
+}
+/* line 29, ../sass/partials/_header.scss */
+header.main nav li {
+  float: left;
+}
+/* line 31, ../sass/partials/_header.scss */
+header.main nav li a {
+  color: #323232;
+  font-family: Vegur;
+  padding: 15px 0 15px;
+  display: block;
+  text-decoration: none;
+  font-size: .9em;
+  transition: .5s ease color;
+  margin-right: 20px;
+  text-transform: lowercase;
+}
+/* line 42, ../sass/partials/_header.scss */
+header.main nav li a:hover {
+  color: #d8df21;
+}
+/* line 47, ../sass/partials/_header.scss */
+header.main nav li.current-menu-item {
+  background: url("../../images/arrow.png") 0 15px no-repeat transparent;
+}
+/* line 49, ../sass/partials/_header.scss */
+header.main nav li.current-menu-item a {
+  padding-left: 10px;
+}
+
+/* line 1, ../sass/partials/footer.scss */
+div.one-col footer {
+  top: -13px;
+  max-width: 629px;
+}
+
+/* line 6, ../sass/partials/footer.scss */
+footer {
+  clear: both;
+  border-bottom: 1px solid #323232;
+  color: #323232;
+  font-family: Vegur;
+  font-size: .5em;
+  letter-spacing: 5px;
+  padding-bottom: 3px;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  /* line 6, ../sass/partials/footer.scss */
+  footer {
+    border-bottom: 0 none;
+    top: -9px;
+  }
+}
+
+/* line 6, ../sass/main.scss */
+div.main-wrapper {
+  max-width: 1052px;
+  margin: 0 auto;
+}
