@@ -377,48 +377,69 @@ div.one-col .right .jacob-william span {
   }
 }
 
-/* line 3, ../sass/partials/_portfolio.scss */
+/* line 2, ../sass/partials/_portfolio.scss */
+.portfolio-archive h1 {
+  float: left;
+}
+/* line 6, ../sass/partials/_portfolio.scss */
 .portfolio-archive h2 {
   margin-bottom: 15px;
   display: block;
 }
-/* line 8, ../sass/partials/_portfolio.scss */
-.portfolio-archive h2 a {
-  color: #323232;
+/* line 11, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view {
+  float: right;
 }
-/* line 12, ../sass/partials/_portfolio.scss */
-.portfolio-archive .images {
-  width: 60%;
-  overflow: hidden;
+/* line 13, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view div {
+  background: url("../../images/view.png") no-repeat scroll 0 -36px transparent;
+  cursor: pointer;
   float: left;
-  margin-bottom: 20px;
-}
-/* line 17, ../sass/partials/_portfolio.scss */
-.portfolio-archive .images .rectangle {
-  width: 100%;
+  height: 32px;
+  width: 32px;
+  margin-top: 35px;
+  diplay: block;
 }
 /* line 22, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view label input:checked + div.list {
+  background-position: -36px -36px;
+}
+/* line 25, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view label input + div.list {
+  background-position: -36px 0px;
+}
+/* line 28, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view label input:checked + div.grid {
+  background-position: 0px 0px;
+}
+/* line 31, ../sass/partials/_portfolio.scss */
+.portfolio-archive .view input {
+  display: none;
+}
+/* line 37, ../sass/partials/_portfolio.scss */
 .portfolio-archive a.portfolio-more {
-  background: url("../../images/circle_large.png") no-repeat scroll 0 0 transparent;
+  background: url("../../images/circle_small.png") no-repeat scroll 57px 0 transparent;
   display: block;
-  float: left;
-  margin-left: 150px;
-  height: 150px;
-  margin-top: 15px;
-  width: 150px;
+  float: right;
+  font-size: 1.3em;
+  height: 83px;
+  line-height: 83px;
+  margin-top: 19px;
+  width: 140px;
 }
-/* line 32, ../sass/partials/_portfolio.scss */
-.portfolio-archive .excerpt {
-  clear: left;
+/* line 48, ../sass/partials/_portfolio.scss */
+.portfolio-archive a.portfolio-more:hover {
+  text-decoration: underline;
 }
-/* line 36, ../sass/partials/_portfolio.scss */
+/* line 52, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters {
   border-top: 1px solid #323232;
   border-bottom: 1px solid #323232;
   overflow: hidden;
   margin-top: 10px;
+  clear: both;
 }
-/* line 41, ../sass/partials/_portfolio.scss */
+/* line 58, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .title {
   color: white;
   background: #323232;
@@ -426,7 +447,7 @@ div.one-col .right .jacob-william span {
   font-family: Vegur;
   float: left;
 }
-/* line 48, ../sass/partials/_portfolio.scss */
+/* line 65, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .filter {
   float: left;
   background: #656565;
@@ -436,36 +457,52 @@ div.one-col .right .jacob-william span {
   cursor: pointer;
   margin: 5px 0 5px 10px;
 }
-/* line 58, ../sass/partials/_portfolio.scss */
-.portfolio-archive .view {
-  border-bottom: 1px solid #323232;
-  overflow: hidden;
-  margin-top: 30px;
-}
-/* line 62, ../sass/partials/_portfolio.scss */
-.portfolio-archive .view div {
-  float: right;
-  padding: 8px 20px;
-  margin-left: 3px;
-  background: #323232;
-  color: white;
-  cursor: pointer;
-  font-family: Vegur;
-}
-/* line 71, ../sass/partials/_portfolio.scss */
-.portfolio-archive .view .active {
+/* line 74, ../sass/partials/_portfolio.scss */
+.portfolio-archive .filters .filter.active {
   background: #d8df21;
 }
-/* line 76, ../sass/partials/_portfolio.scss */
+/* line 79, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items {
   margin-top: 35px;
   padding: 0 20px;
 }
-/* line 79, ../sass/partials/_portfolio.scss */
+/* line 82, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item {
   border-bottom: 1px solid #323232;
   margin-bottom: 40px;
   padding-bottom: 20px;
+  overflow: hidden;
+}
+/* line 90, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.rectangle .images img {
+  width: 100%;
+  display: block;
+}
+/* line 96, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .images {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+/* line 102, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .images {
+  width: 50%;
+  float: left;
+}
+/* line 107, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .thumbs img {
+  border: 1px solid;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 60px;
+}
+/* line 117, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .excerpt {
+  float: right;
+  width: 45%;
+  margin-left: 5%;
 }
 
 /* line 1, ../sass/partials/_normal.scss */
