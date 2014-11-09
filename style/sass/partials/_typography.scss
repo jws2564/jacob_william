@@ -8,7 +8,13 @@
 @include font-face($body-copy-bold, font-files($body-copy-bold-path-woff, $body-copy-bold-path-ttf, $body-copy-bold-path-svg), $body-copy-bold-path-eot);
 
 p, h1, h2, h3, h4, a{
-	font-family: $body-copy-regular;
+	font-family: $body-copy-regular;	
+}
+
+p{
+	a{
+		font-family: $body-copy-bold;
+	}
 }
 
 h1{

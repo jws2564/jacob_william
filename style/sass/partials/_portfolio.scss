@@ -76,6 +76,12 @@
 		}
 	}
 	
+	.loading{
+		display: none;
+		padding: 80px;
+		text-align: center;
+	}
+	
 	.items{
 		margin-top: 35px;
 		padding: 0 20px;
@@ -84,6 +90,11 @@
 		    margin-bottom: 40px;
 		    padding-bottom: 20px;
 		    overflow: hidden;
+		}
+		
+		a.grid{
+			float: left;
+			margin: 20px;
 		}
 		
 		.item.rectangle{
@@ -103,15 +114,23 @@
 				width: 50%;
 				float: left;
 			}
-			.thumbs{
-				img{
-					border: 1px solid;
-				    display: block;
-				    float: left;
-				    margin-right: 10px;
-				    margin-top: 10px;
-				    padding: 10px;
-				    width: 60px;
+			.image-wrapper{
+				text-align: center;
+				float: left;
+				.thumbs{
+					margin-top: 30px;
+					img{
+					    display: block;
+					    float: left;
+					    margin-right: 10px;
+					    margin-top: 10px;
+					    padding: 10px;
+					    width: 60px;
+					    cursor: pointer;
+					}
+					img.current{
+						border-bottom: 3px solid $green;
+					}
 				}
 			}
 			.excerpt{

@@ -8,7 +8,8 @@
 				action: "jws_get_posts",
 				url : jws_ajax.ajax_url,
 				container : ".items",
-				thumbs : ".thumbs img"
+				thumbs : ".thumbs img",
+				loader: ".loading"
 		};
 		
 		var filter = function(){
@@ -19,9 +20,15 @@
 			filters.each(function(){
 				data.filters.push($(this).data('term-name'));
 			});
-			
+			var scroll = $(window).scrollTop();
+			$(settings.container).hide();
+			$(settings.loader).show();
+
 			$.post(settings.url, data, function(response){
 				$(settings.container).html(response);
+				$(settings.loader).hide();
+				$(settings.container).show();
+				$(window).scrollTop(scroll);
 			});
 		};
 		
@@ -33,13 +40,18 @@
 		var gallery = function(image){
 			var current = $(image).parent().prev();
 			$(current).attr('src', $(image).attr('src'));
+			current.parent().find('.current').toggleClass('current');
+			$(image).addClass('current');
 		};
 		
 		var init = function(){
 			//add event handlers
-			$(settings.filter_buttons).click(function(){ toggle.apply(this); });
+			$(settings.filter_buttons).click(function(e){ toggle.apply(this); });
 			$(settings.view_buttons).change(function(){filter();});
 			$(settings.container).on("click", settings.thumbs, function(){gallery(this);} );
+			//reset the view on page load
+			$(settings.view_buttons +"[value='list']").attr("checked", true);
+			$(settings.view_buttons +"[value='grid']").attr("checked", false);
 		};
 		
 		return { init: init };

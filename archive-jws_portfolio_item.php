@@ -14,6 +14,7 @@
 			<div class="filter" data-term-id="<?=$filter->term_id?>" data-term-name="<?=$filter->name?>"><?=$filter->name?></div>
 		<?php endforeach;?>
 	</div>
+	<div class="loading"><img src="<?= get_stylesheet_directory_uri() ?>/images/loading.GIF" alt="Loading you content, please wait."/></div>
 	<div class="items">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php jws_print_portfolio_print_post(get_the_ID()); ?>

@@ -12,6 +12,7 @@
 				</div>
 			</article>
 		<?php endwhile; else : ?>
+		
 			<div class="panel"><h3><?php _e( 'Sorry, no content matched your criteria.' ); ?></h3></div>
 		<?php endif; ?>
 </div>

@@ -83,18 +83,23 @@ p, h1, h2, h3, h4, a {
   font-family: Vegur;
 }
 
-/* line 14, ../sass/partials/_typography.scss */
+/* line 15, ../sass/partials/_typography.scss */
+p a {
+  font-family: "Vegur Bold";
+}
+
+/* line 20, ../sass/partials/_typography.scss */
 h1 {
   font-size: 3em;
   color: #d8df21;
 }
 
-/* line 19, ../sass/partials/_typography.scss */
+/* line 25, ../sass/partials/_typography.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 23, ../sass/partials/_typography.scss */
+/* line 29, ../sass/partials/_typography.scss */
 h3 {
   font-size: 1.1em;
 }
@@ -146,7 +151,7 @@ div.one-col div.left .content {
 }
 /* line 27, ../sass/partials/_one-col.scss */
 div.one-col div.left .content #home-content {
-  margin-top: 225px;
+  margin-top: 180px;
   margin-bottom: 119px;
   overflow: hidden;
   max-width: 664px;
@@ -291,31 +296,66 @@ div.one-col div.left .content .cta > a {
 div.one-col div.left .content .cta > a:hover {
   color: #d8df21;
 }
+/* line 118, ../sass/partials/_one-col.scss */
+div.one-col div.left .content .contact-links {
+  margin-top: 20px;
+}
+/* line 122, ../sass/partials/_one-col.scss */
+div.one-col div.left .content .contact-links > a {
+  display: block;
+  float: left;
+  height: 65px;
+  width: 65px;
+  margin-right: 20px;
+  text-indent: 1000px;
+  overflow: hidden;
+  -moz-transition: ease 0.5s all;
+  -o-transition: ease 0.5s all;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+}
+/* line 133, ../sass/partials/_one-col.scss */
+div.one-col div.left .content .contact-links > a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 137, ../sass/partials/_one-col.scss */
+div.one-col div.left .content a.facebook {
+  background: url("../../images/facebook.png") no-repeat 0 0 transparent;
+}
+/* line 141, ../sass/partials/_one-col.scss */
+div.one-col div.left .content a.google {
+  background: url("../../images/google_plus.png") no-repeat 0 0 transparent;
+}
+/* line 145, ../sass/partials/_one-col.scss */
+div.one-col div.left .content a.linkedin {
+  background: url("../../images/linkedin.png") no-repeat 0 0 transparent;
+}
 @media screen and (max-width: 1000px) {
   /* line 20, ../sass/partials/_one-col.scss */
   div.one-col div.left .content {
     max-width: 70%;
   }
 }
-/* line 123, ../sass/partials/_one-col.scss */
+/* line 154, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col {
-  max-width: 600px;
+  max-width: 580px;
   padding: 25px;
 }
-/* line 126, ../sass/partials/_one-col.scss */
+/* line 157, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col .text {
   padding-left: 15px;
 }
-/* line 129, ../sass/partials/_one-col.scss */
+/* line 160, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col h1 {
   margin-bottom: 10px;
   color: #d8df21;
 }
-/* line 133, ../sass/partials/_one-col.scss */
+/* line 164, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col p {
   padding: 12px 0;
 }
-/* line 140, ../sass/partials/_one-col.scss */
+/* line 171, ../sass/partials/_one-col.scss */
 div.one-col .right {
   position: absolute;
   top: -4px;
@@ -349,7 +389,7 @@ div.one-col .right {
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 140, ../sass/partials/_one-col.scss */
+  /* line 171, ../sass/partials/_one-col.scss */
   div.one-col .right {
     -moz-animation: none;
     -webkit-animation: none;
@@ -357,12 +397,12 @@ div.one-col .right {
   }
 }
 @media screen and (max-width: 710px) {
-  /* line 140, ../sass/partials/_one-col.scss */
+  /* line 171, ../sass/partials/_one-col.scss */
   div.one-col .right {
     right: -52px;
   }
 }
-/* line 159, ../sass/partials/_one-col.scss */
+/* line 190, ../sass/partials/_one-col.scss */
 div.one-col .right .jacob-william span {
   bottom: 10px;
   color: white;
@@ -371,7 +411,7 @@ div.one-col .right .jacob-william span {
   font-family: Vegur;
 }
 @media screen and (max-width: 710px) {
-  /* line 159, ../sass/partials/_one-col.scss */
+  /* line 190, ../sass/partials/_one-col.scss */
   div.one-col .right .jacob-william span {
     right: -66px;
   }
@@ -462,43 +502,67 @@ div.one-col .right .jacob-william span {
   background: #d8df21;
 }
 /* line 79, ../sass/partials/_portfolio.scss */
+.portfolio-archive .loading {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+/* line 85, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items {
   margin-top: 35px;
   padding: 0 20px;
 }
-/* line 82, ../sass/partials/_portfolio.scss */
+/* line 88, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item {
   border-bottom: 1px solid #323232;
   margin-bottom: 40px;
   padding-bottom: 20px;
   overflow: hidden;
 }
-/* line 90, ../sass/partials/_portfolio.scss */
+/* line 95, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items a.grid {
+  float: left;
+  margin: 20px;
+}
+/* line 101, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.rectangle .images img {
   width: 100%;
   display: block;
 }
-/* line 96, ../sass/partials/_portfolio.scss */
+/* line 107, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .images {
   margin-bottom: 40px;
   overflow: hidden;
 }
-/* line 102, ../sass/partials/_portfolio.scss */
+/* line 113, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .images {
   width: 50%;
   float: left;
 }
-/* line 107, ../sass/partials/_portfolio.scss */
-.portfolio-archive .items .item.square .thumbs img {
-  border: 1px solid;
+/* line 117, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .image-wrapper {
+  text-align: center;
+  float: left;
+}
+/* line 120, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .image-wrapper .thumbs {
+  margin-top: 30px;
+}
+/* line 122, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .image-wrapper .thumbs img {
   display: block;
   float: left;
   margin-right: 10px;
   margin-top: 10px;
   padding: 10px;
   width: 60px;
+  cursor: pointer;
 }
-/* line 117, ../sass/partials/_portfolio.scss */
+/* line 131, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .image-wrapper .thumbs img.current {
+  border-bottom: 3px solid #d8df21;
+}
+/* line 136, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .excerpt {
   float: right;
   width: 45%;
@@ -508,6 +572,10 @@ div.one-col .right .jacob-william span {
 /* line 1, ../sass/partials/_normal.scss */
 .content {
   margin: 30px 15px;
+}
+/* line 4, ../sass/partials/_normal.scss */
+.content p {
+  line-height: 1.2em;
 }
 
 /* line 1, ../sass/partials/_header.scss */

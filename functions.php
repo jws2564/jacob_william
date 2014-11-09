@@ -35,7 +35,7 @@ add_action( 'init', 'jws_custom_taxonomy_init' );
 function jws_custom_taxonomy_init() {
 	// create a project taxonomy to keep all project pages, articles, status updates grouped together
 	register_taxonomy(
-		'portfolio',
+		'jws_portfolio',
 		array('jws_portfolio_item'),
 		array(
 		'labels' => array('name'=>'Categories', 'singular_name'=>'Category', 'menu_name'=>'Categories'),
@@ -129,20 +129,21 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 	$images = get_attached_media('image', $id);
 	
 	if($_POST['view'] == 'list' || !$_POST['view']){
-	
 		if(has_term("square", 'portfolio', $id)) : ?>
 			<div class="item square">	
 				<div class="images">
 				<?php $image = array_shift($images); ?>
+				<div class="image-wrapper">
 				<img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/> 
 				<?php if(count($images) >= 1): ?>
 					<div class="thumbs">
-						<img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/> 
+						<img class="current" src="<?=$image->guid?>" alt="<?=$image->post_title?>"/> 
 						<?php foreach($images as $image): ?>
 							<img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/>
 						<?php endforeach; ?>
 					</div>
 				<?php endif; ?>
+				</div>
 			</div>
 			<div class="excerpt">
 				<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
@@ -150,9 +151,10 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 			<div class="item rectangle">
 			<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
 			<div class="images">
-				<?php foreach($images as $image):?>
+				<?php if(!empty($images)):?>
+					<?php $image = array_shift($images); ?>
 					<a href="<?=get_permalink($id)?>"><img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/></a>
-				<?php endforeach;?>		
+				<?php endif;?>		
 			</div>
 			<div class="excerpt">
 		<?php endif; ?>
@@ -166,13 +168,13 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 		</div>
 		<?php 
 	}else{
-		if(has_term("square", 'portfolio', $id)){
-			foreach($images as $image): ?>
-				<a class="grid" href="<?=get_permalink($id)?>"><img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/></a>
-			<?php endforeach;
-		}else{
-			//skip the first image and grab the rest of them
+		if(!has_term("square", 'portfolio', $id)){
+			//skip first image
+			array_shift($images);	
 		}
+		foreach($images as $image): ?>
+			<a class="grid" href="<?=get_permalink($id)?>"><img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/></a>
+		<?php endforeach;
 	}
 }
 
