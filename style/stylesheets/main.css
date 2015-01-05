@@ -104,6 +104,106 @@ h3 {
   font-size: 1.1em;
 }
 
+/* line 1, ../sass/partials/_header.scss */
+div.one-col header.main nav {
+  width: 625px;
+}
+
+/* line 5, ../sass/partials/_header.scss */
+header.zig {
+  background: url("../../images/zig.png") no-repeat right 1px transparent;
+}
+
+/* line 9, ../sass/partials/_header.scss */
+header.main {
+  overflow: hidden;
+}
+/* line 11, ../sass/partials/_header.scss */
+header.main a.logo {
+  background: url("../../images/jacob.png") no-repeat scroll -4px 14px transparent;
+  display: block;
+  height: 177px;
+  margin-bottom: 12px;
+  padding-top: 14px;
+  width: 179px;
+}
+@media screen and (max-width: 900px) {
+  /* line 11, ../sass/partials/_header.scss */
+  header.main a.logo {
+    border-bottom: 1px solid #323232;
+    background-position: 0px 14px;
+  }
+}
+/* line 24, ../sass/partials/_header.scss */
+header.main nav {
+  border-top: 1px solid #323232;
+}
+@media screen and (max-width: 900px) {
+  /* line 24, ../sass/partials/_header.scss */
+  header.main nav {
+    border-top: 0 none;
+  }
+}
+/* line 29, ../sass/partials/_header.scss */
+header.main nav li {
+  float: left;
+}
+/* line 31, ../sass/partials/_header.scss */
+header.main nav li a {
+  color: #323232;
+  font-family: Vegur;
+  padding: 15px 0 15px;
+  display: block;
+  text-decoration: none;
+  font-size: .9em;
+  transition: .5s ease color;
+  margin-right: 20px;
+  text-transform: lowercase;
+}
+/* line 42, ../sass/partials/_header.scss */
+header.main nav li a:hover {
+  color: #d8df21;
+}
+/* line 47, ../sass/partials/_header.scss */
+header.main nav li.current-menu-item {
+  background: url("../../images/arrow.png") 0 15px no-repeat transparent;
+}
+/* line 49, ../sass/partials/_header.scss */
+header.main nav li.current-menu-item a {
+  padding-left: 10px;
+}
+
+/* line 1, ../sass/partials/_normal.scss */
+.content {
+  margin: 30px 0px;
+}
+/* line 4, ../sass/partials/_normal.scss */
+.content p {
+  line-height: 1.2em;
+  padding: 15px 0;
+}
+/* line 9, ../sass/partials/_normal.scss */
+.content ul {
+  font-family: Vegur;
+  margin-left: 40px;
+  padding: 10px 0;
+  list-style: disc;
+}
+/* line 17, ../sass/partials/_normal.scss */
+.content ul ul {
+  list-style: circle;
+}
+/* line 21, ../sass/partials/_normal.scss */
+.content h1 {
+  margin-bottom: 10px;
+}
+/* line 25, ../sass/partials/_normal.scss */
+.content h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #323232;
+}
+
 /* line 1, ../sass/partials/_one-col.scss */
 a {
   color: #d8df21;
@@ -340,11 +440,11 @@ div.one-col div.left .content a.linkedin {
 /* line 154, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col {
   max-width: 580px;
-  padding: 25px;
+  padding: 25px 25px 25px 0;
 }
 /* line 157, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col .text {
-  padding-left: 15px;
+  padding-left: 0px;
 }
 /* line 160, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col h1 {
@@ -423,14 +523,31 @@ div.one-col .right .jacob-william span {
 }
 /* line 6, ../sass/partials/_portfolio.scss */
 .portfolio-archive h2 {
-  margin-bottom: 15px;
+  border-bottom: 2px solid white;
   display: block;
+  font-size: 1.7em;
+  overflow: hidden;
+  padding: 20px 0;
 }
-/* line 11, ../sass/partials/_portfolio.scss */
+/* line 12, ../sass/partials/_portfolio.scss */
+.portfolio-archive h2 a {
+  background: none repeat scroll 0 0 #d8df21;
+  color: white;
+  display: block;
+  float: left;
+  padding: 7px 13px;
+}
+/* line 19, ../sass/partials/_portfolio.scss */
+.portfolio-archive h2 a:hover {
+  background-color: white;
+  color: #d8df21;
+  border: 1px solid #d8df21;
+}
+/* line 26, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view {
   float: right;
 }
-/* line 13, ../sass/partials/_portfolio.scss */
+/* line 28, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view div {
   background: url("../../images/view.png") no-repeat scroll 0 -36px transparent;
   cursor: pointer;
@@ -440,38 +557,46 @@ div.one-col .right .jacob-william span {
   margin-top: 35px;
   diplay: block;
 }
-/* line 22, ../sass/partials/_portfolio.scss */
+/* line 37, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view label input:checked + div.list {
   background-position: -36px -36px;
 }
-/* line 25, ../sass/partials/_portfolio.scss */
+/* line 40, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view label input + div.list {
   background-position: -36px 0px;
 }
-/* line 28, ../sass/partials/_portfolio.scss */
+/* line 43, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view label input:checked + div.grid {
   background-position: 0px 0px;
 }
-/* line 31, ../sass/partials/_portfolio.scss */
+/* line 46, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view input {
   display: none;
 }
-/* line 37, ../sass/partials/_portfolio.scss */
+/* line 51, ../sass/partials/_portfolio.scss */
+.portfolio-archive .excerpt {
+  float: left;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  width: 75%;
+}
+/* line 59, ../sass/partials/_portfolio.scss */
 .portfolio-archive a.portfolio-more {
-  background: url("../../images/circle_small.png") no-repeat scroll 57px 0 transparent;
+  background: url("../../images/circle_small.png") no-repeat scroll right 0 transparent;
   display: block;
-  float: right;
   font-size: 1.3em;
   height: 83px;
   line-height: 83px;
-  margin-top: 19px;
-  width: 140px;
+  margin: 18px 0;
+  width: 180px;
+  float: right;
+  clear: right;
 }
-/* line 48, ../sass/partials/_portfolio.scss */
+/* line 71, ../sass/partials/_portfolio.scss */
 .portfolio-archive a.portfolio-more:hover {
   text-decoration: underline;
 }
-/* line 52, ../sass/partials/_portfolio.scss */
+/* line 75, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters {
   border-top: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -479,15 +604,15 @@ div.one-col .right .jacob-william span {
   margin-top: 10px;
   clear: both;
 }
-/* line 58, ../sass/partials/_portfolio.scss */
+/* line 82, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .title {
   color: white;
   background: #323232;
-  padding: 15px 20px;
+  padding: 13px 20px;
   font-family: Vegur;
   float: left;
 }
-/* line 65, ../sass/partials/_portfolio.scss */
+/* line 89, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .filter {
   float: left;
   background: #656565;
@@ -495,156 +620,94 @@ div.one-col .right .jacob-william span {
   font-family: Vegur;
   padding: 10px;
   cursor: pointer;
-  margin: 5px 0 5px 10px;
+  margin: 3px 0 3px 10px;
 }
-/* line 74, ../sass/partials/_portfolio.scss */
+/* line 98, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .filter.active {
   background: #d8df21;
 }
-/* line 79, ../sass/partials/_portfolio.scss */
+/* line 103, ../sass/partials/_portfolio.scss */
 .portfolio-archive .loading {
   display: none;
   padding: 80px;
   text-align: center;
 }
-/* line 85, ../sass/partials/_portfolio.scss */
+/* line 109, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items {
   margin-top: 35px;
-  padding: 0 20px;
+  padding: 0;
 }
-/* line 88, ../sass/partials/_portfolio.scss */
+/* line 112, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item {
-  border-bottom: 1px solid #323232;
+  border-top: 1px solid #323232;
   margin-bottom: 40px;
-  padding-bottom: 20px;
   overflow: hidden;
+  padding-bottom: 20px;
 }
-/* line 95, ../sass/partials/_portfolio.scss */
+/* line 119, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item:first-of-type {
+  border-top: 0 none;
+}
+/* line 123, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item:last-of-type {
+  border-bottom: 1px solid #323232;
+}
+/* line 127, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items a.grid {
   float: left;
   margin: 20px;
 }
-/* line 101, ../sass/partials/_portfolio.scss */
+/* line 133, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.rectangle .images img {
+  box-sizing: border-box;
   width: 100%;
-  display: block;
 }
-/* line 107, ../sass/partials/_portfolio.scss */
+/* line 139, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .images {
-  margin-bottom: 40px;
+  clear: both;
   overflow: hidden;
+  text-align: center;
 }
-/* line 113, ../sass/partials/_portfolio.scss */
+/* line 146, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .images {
   width: 50%;
   float: left;
+  margin-top: 20px;
 }
-/* line 117, ../sass/partials/_portfolio.scss */
+/* line 151, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .image-wrapper {
-  text-align: center;
-  float: left;
+  box-sizing: border-box;
+  width: 100%;
 }
-/* line 120, ../sass/partials/_portfolio.scss */
-.portfolio-archive .items .item.square .image-wrapper .thumbs {
-  margin-top: 30px;
+/* line 156, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .thumbs {
+  margin-top: 40px;
 }
-/* line 122, ../sass/partials/_portfolio.scss */
-.portfolio-archive .items .item.square .image-wrapper .thumbs img {
+/* line 158, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .thumbs .thumb {
   display: block;
   float: left;
   margin-right: 10px;
-  margin-top: 10px;
   padding: 10px;
-  width: 60px;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
+  border: 1px solid;
 }
-/* line 131, ../sass/partials/_portfolio.scss */
-.portfolio-archive .items .item.square .image-wrapper .thumbs img.current {
-  border-bottom: 3px solid #d8df21;
+/* line 167, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .thumbs .thumb img {
+  width: 100%;
 }
-/* line 136, ../sass/partials/_portfolio.scss */
+/* line 171, ../sass/partials/_portfolio.scss */
+.portfolio-archive .items .item.square .thumbs .thumb.current {
+  border: 2px solid #d8df21;
+}
+/* line 175, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .excerpt {
   float: right;
   width: 45%;
   margin-left: 5%;
-}
-
-/* line 1, ../sass/partials/_normal.scss */
-.content {
-  margin: 30px 15px;
-}
-/* line 4, ../sass/partials/_normal.scss */
-.content p {
-  line-height: 1.2em;
-}
-
-/* line 1, ../sass/partials/_header.scss */
-div.one-col header.main nav {
-  width: 625px;
-}
-
-/* line 5, ../sass/partials/_header.scss */
-header.zig {
-  background: url("../../images/zig.png") no-repeat right 1px transparent;
-}
-
-/* line 9, ../sass/partials/_header.scss */
-header.main {
-  overflow: hidden;
-}
-/* line 11, ../sass/partials/_header.scss */
-header.main a.logo {
-  background: url("../../images/jacob.png") no-repeat scroll -4px 14px transparent;
-  display: block;
-  height: 177px;
-  margin-bottom: 12px;
-  padding-top: 14px;
-  width: 179px;
-}
-@media screen and (max-width: 900px) {
-  /* line 11, ../sass/partials/_header.scss */
-  header.main a.logo {
-    border-bottom: 1px solid #323232;
-    background-position: 0px 14px;
-  }
-}
-/* line 24, ../sass/partials/_header.scss */
-header.main nav {
-  border-top: 1px solid #323232;
-}
-@media screen and (max-width: 900px) {
-  /* line 24, ../sass/partials/_header.scss */
-  header.main nav {
-    border-top: 0 none;
-  }
-}
-/* line 29, ../sass/partials/_header.scss */
-header.main nav li {
-  float: left;
-}
-/* line 31, ../sass/partials/_header.scss */
-header.main nav li a {
-  color: #323232;
-  font-family: Vegur;
-  padding: 15px 0 15px;
-  display: block;
-  text-decoration: none;
-  font-size: .9em;
-  transition: .5s ease color;
-  margin-right: 20px;
-  text-transform: lowercase;
-}
-/* line 42, ../sass/partials/_header.scss */
-header.main nav li a:hover {
-  color: #d8df21;
-}
-/* line 47, ../sass/partials/_header.scss */
-header.main nav li.current-menu-item {
-  background: url("../../images/arrow.png") 0 15px no-repeat transparent;
-}
-/* line 49, ../sass/partials/_header.scss */
-header.main nav li.current-menu-item a {
-  padding-left: 10px;
+  margin-top: 0;
 }
 
 /* line 1, ../sass/partials/footer.scss */

@@ -8,7 +8,7 @@
 				action: "jws_get_posts",
 				url : jws_ajax.ajax_url,
 				container : ".items",
-				thumbs : ".thumbs img",
+				thumbs : ".thumbs .thumb",
 				loader: ".loading"
 		};
 		
@@ -38,9 +38,9 @@
 		};
 		
 		var gallery = function(image){
-			var current = $(image).parent().prev();
-			$(current).attr('src', $(image).attr('src'));
-			current.parent().find('.current').toggleClass('current');
+			var current = $(image).parent().prev().children('img');
+			$(current).attr('src', $(image).children('img').attr('src'));
+			current.parent().next().find('.current').toggleClass('current');
 			$(image).addClass('current');
 		};
 		

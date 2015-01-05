@@ -115,7 +115,7 @@ add_action( 'wp_ajax_nopriv_jws_get_posts', 'jws_get_posts' );
 function jws_get_posts(){
 	$args = array('post_type' => "jws_portfolio_item");
 	if(!empty($_POST['filters'])){
-		$args ['tax_query'] = array(array('taxonomy' => 'portfolio', 'field'=>'slug', 'terms' => $_POST['filters']));
+		$args ['tax_query'] = array(array('taxonomy' => 'jws_portfolio', 'field'=>'slug', 'terms' => $_POST['filters']));
 	}
 	$posts = get_posts($args);
 	
@@ -129,21 +129,23 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 	$images = get_attached_media('image', $id);
 	
 	if($_POST['view'] == 'list' || !$_POST['view']){
-		if(has_term("square", 'portfolio', $id)) : ?>
+
+		if(has_term("square", 'jws_portfolio', $id)) : ?>
 			<div class="item square">	
 				<div class="images">
 				<?php $image = array_shift($images); ?>
 				<div class="image-wrapper">
 				<img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/> 
+				
+				</div>
 				<?php if(count($images) >= 1): ?>
 					<div class="thumbs">
-						<img class="current" src="<?=$image->guid?>" alt="<?=$image->post_title?>"/> 
+						<div class="thumb current"><img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/></div>
 						<?php foreach($images as $image): ?>
-							<img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/>
+							<div class="thumb"><img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/></div>
 						<?php endforeach; ?>
 					</div>
 				<?php endif; ?>
-				</div>
 			</div>
 			<div class="excerpt">
 				<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
@@ -161,10 +163,10 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 			<?php if($need_excerpt) : ?>
 				<p><?=$need_excerpt?></p>
 			<?php else: ?>
-				<p><?=the_excerpt(); ?></p>
+				<?=the_excerpt(); ?>
 			<?php endif;?>
 		</div>
-		<a href="<?=get_the_permalink($id)?>" class="portfolio-more">more</a>
+		<a href="<?=get_the_permalink($id)?>" class="portfolio-more">learn more</a>
 		</div>
 		<?php 
 	}else{
