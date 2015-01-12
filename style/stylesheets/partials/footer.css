@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$gray".
-        on line 8 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss
+Error: Undefined variable: "$light-gray".
+        on line 7 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss
 
+2: 	top: -13px;
 3: 	max-width: 629px;
-4: }
-5: 
-6: footer{	
-7: 		clear: both;
-8: 		border-bottom: 1px solid $gray;
-9: 		color: $gray;
-10: 		font-family: $body-copy-regular;
-11: 		font-size: .5em;
-12: 		letter-spacing: 5px;
-13: 		padding-bottom: 3px;
+4: 	@media screen and (max-width: 640px){
+5: 		padding: 10px 0;
+6:     	top: 0;	
+7:     	border-top: 1px solid $light-gray;
+8:     	margin-top: 70px;
+9: 	}
+10: 	@media screen and (max-width: 400px){
+11: 		line-height: 1.6em;
+12: 		text-align: center;
 
 Backtrace:
-/Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss:8
+/Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss:7
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
@@ -23,6 +23,20 @@ Backtrace:
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/list_literal.rb:62:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:502:in `visit_media'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
@@ -71,4 +85,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gray\".\A         on line 8 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss\A \A 3: 	max-width: 629px;\A 4: }\A 5: \A 6: footer{	\A 7: 		clear: both;\A 8: 		border-bottom: 1px solid $gray;\A 9: 		color: $gray;\A 10: 		font-family: $body-copy-regular;\A 11: 		font-size: .5em;\A 12: 		letter-spacing: 5px;\A 13: 		padding-bottom: 3px;"; }
+  content: "Error: Undefined variable: \"$light-gray\".\A         on line 7 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss\A \A 2: 	top: -13px;\A 3: 	max-width: 629px;\A 4: 	@media screen and (max-width: 640px){\A 5: 		padding: 10px 0;\A 6:     	top: 0;	\A 7:     	border-top: 1px solid $light-gray;\A 8:     	margin-top: 70px;\A 9: 	}\A 10: 	@media screen and (max-width: 400px){\A 11: 		line-height: 1.6em;\A 12: 		text-align: center;"; }

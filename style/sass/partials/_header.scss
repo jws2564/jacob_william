@@ -2,8 +2,19 @@ div.one-col header.main nav {
 	width: 625px;
 }
 
-header.zig{
+header.zig.main{
 	background: url("../../images/zig.png") no-repeat right 1px transparent;
+		nav{
+			@media screen and (max-width: 900px){
+					border-top: 1px $light-gray solid;
+			}
+	}
+	a.logo {
+	    @media screen and (max-width: 900px){
+			border-bottom: 0 none;
+			background-position: -4px 14px;
+		}
+	}
 }
 
 header.main {
@@ -18,6 +29,9 @@ header.main {
 			    @media screen and (max-width: 900px){
 					border-bottom: 1px solid $gray;
 					background-position: 0px 14px;
+				}
+				@media screen and (max-width: 640px){
+					width: 100%;
 				}
 			}
 			

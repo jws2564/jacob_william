@@ -17,6 +17,9 @@ div.one-col{
 		@media screen and (max-width: 1010px){
 			background: none; 
 		}
+		@media screen and (max-width: 640px){
+			height: auto;
+		}
 		.content{
 			clear: both;
 			max-width: 730px;	
@@ -32,6 +35,9 @@ div.one-col{
 				@media screen and (max-width: 960px){
 					margin-bottom: 45px;
 					margin-top: 180px;
+				}
+				@media screen and (max-width: 640px){
+					margin-top: 40px;
 				}
 				#developer, #designer{
 					text-decoration: none;
@@ -53,12 +59,23 @@ div.one-col{
 				    @media screen and (max-width: 830px){
 				    	margin: 0;
 				    }
+				    @media screen and (max-width: 400px){
+					    font-size: 2.2em;
+					    height: 23px;
+					    line-height: 26px;
+				    }
 				}
 				#designer {
 				    width: 264px;
+				    @media screen and (max-width: 400px){
+				    	width: 211px;
+				    }
 				}
 				#developer {
 				    width: 306px;
+				    @media screen and (max-width: 400px){
+				    	width: 244px;
+				    }
 				}
 				.line {
 				    border-top: 1px solid;
@@ -71,6 +88,9 @@ div.one-col{
 				}
 				#designer, .line{
 					margin-top: 33px;
+					@media screen and (max-width: 400px){
+				    	margin-top: 20px;
+				    }
 				}
 			}
 			.cta{
@@ -91,6 +111,9 @@ div.one-col{
 					float: left;
 					margin-top: 35px;
 				}
+				@media screen and (max-width: 640px){
+			    	margin-top: 0;
+			    }
 			   	background: url("../../images/circle.png") no-repeat scroll right 1px transparent;
 			    color: $gray;
 			    #display: block;
@@ -149,11 +172,25 @@ div.one-col{
 			@media screen and (max-width: 1000px){
 				max-width: 70%;
 			}
+			
+			@media screen and (max-width: 640px){
+				max-width: 100%;
+			}
 
 		}
 		.content.one-col {
 		    max-width: 580px;
 		    padding: 25px 25px 25px 0;
+		    @media screen and (max-width: 970px){
+		    	max-width: 60%;
+		    }
+		    @media screen and (max-width: 970px){
+		    	max-width: 50%;
+		    }
+		    @media screen and (max-width: 640px){
+		    	max-width: 100%;
+		    }
+		    
 		    .text{
 		    	padding-left: 0px;
 		    }
@@ -185,6 +222,9 @@ div.one-col{
 		}
 		@media screen and (max-width: 710px){
 			right: -52px;
+		}
+		@media screen and (max-width: 640px){
+			display: none;
 		}
 	   @include animation(move-image 1s ease 1);
 	    .jacob-william span {

@@ -6,7 +6,7 @@
 <title><?=ucwords(strtolower(wp_title("", false, ""))); ?> | <?= get_bloginfo( 'description' ) ?></title>
 <meta name="viewport" content="initial-scale=1">
 </head>
-<body>
+<body <?php echo body_class(); ?>>
 <div class="main-wrapper">
 		<header class="main zig">
 			<a class="logo" href="/"></a>
