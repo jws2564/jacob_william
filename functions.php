@@ -151,7 +151,7 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 				<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
 		<?php else: ?>
 			<div class="item rectangle">
-			<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
+			
 			<div class="images">
 				<?php if(!empty($images)):?>
 					<?php $image = array_shift($images); ?>
@@ -159,14 +159,16 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 				<?php endif;?>		
 			</div>
 			<div class="excerpt">
+			<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
 		<?php endif; ?>
 			<?php if($need_excerpt) : ?>
 				<p><?=$need_excerpt?></p>
 			<?php else: ?>
 				<?=the_excerpt(); ?>
 			<?php endif;?>
+			<a href="<?=get_the_permalink($id)?>" class="portfolio-more">learn more</a>
 		</div>
-		<a href="<?=get_the_permalink($id)?>" class="portfolio-more">learn more</a>
+		
 		</div>
 		<?php 
 	}else{

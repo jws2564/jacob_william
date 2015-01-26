@@ -299,7 +299,13 @@ div.one-col div.left .content #home-content {
     margin-top: 40px;
   }
 }
-/* line 42, ../sass/partials/_one-col.scss */
+@media screen and (max-width: 320px) {
+  /* line 30, ../sass/partials/_one-col.scss */
+  div.one-col div.left .content #home-content {
+    margin-top: 20px;
+  }
+}
+/* line 45, ../sass/partials/_one-col.scss */
 div.one-col div.left .content #home-content #developer, div.one-col div.left .content #home-content #designer {
   text-decoration: none;
   color: #d8df21;
@@ -315,47 +321,47 @@ div.one-col div.left .content #home-content #developer, div.one-col div.left .co
   letter-spacing: 10px;
 }
 @media screen and (max-width: 960px) {
-  /* line 42, ../sass/partials/_one-col.scss */
+  /* line 45, ../sass/partials/_one-col.scss */
   div.one-col div.left .content #home-content #developer, div.one-col div.left .content #home-content #designer {
     float: none;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 42, ../sass/partials/_one-col.scss */
+  /* line 45, ../sass/partials/_one-col.scss */
   div.one-col div.left .content #home-content #developer, div.one-col div.left .content #home-content #designer {
     margin: 0;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 42, ../sass/partials/_one-col.scss */
+  /* line 45, ../sass/partials/_one-col.scss */
   div.one-col div.left .content #home-content #developer, div.one-col div.left .content #home-content #designer {
     font-size: 2.2em;
     height: 23px;
     line-height: 26px;
   }
 }
-/* line 68, ../sass/partials/_one-col.scss */
+/* line 71, ../sass/partials/_one-col.scss */
 div.one-col div.left .content #home-content #designer {
   width: 264px;
 }
 @media screen and (max-width: 400px) {
-  /* line 68, ../sass/partials/_one-col.scss */
+  /* line 71, ../sass/partials/_one-col.scss */
   div.one-col div.left .content #home-content #designer {
     width: 211px;
   }
 }
-/* line 74, ../sass/partials/_one-col.scss */
+/* line 77, ../sass/partials/_one-col.scss */
 div.one-col div.left .content #home-content #developer {
   width: 306px;
 }
 @media screen and (max-width: 400px) {
-  /* line 74, ../sass/partials/_one-col.scss */
+  /* line 77, ../sass/partials/_one-col.scss */
   div.one-col div.left .content #home-content #developer {
     width: 244px;
   }
 }
-/* line 80, ../sass/partials/_one-col.scss */
+/* line 83, ../sass/partials/_one-col.scss */
 div.one-col div.left .content #home-content .line {
   border-top: 1px solid;
   height: 1px;
@@ -363,22 +369,22 @@ div.one-col div.left .content #home-content .line {
   width: 183px;
 }
 @media screen and (max-width: 1000px) {
-  /* line 80, ../sass/partials/_one-col.scss */
+  /* line 83, ../sass/partials/_one-col.scss */
   div.one-col div.left .content #home-content .line {
     display: none;
   }
 }
-/* line 89, ../sass/partials/_one-col.scss */
+/* line 92, ../sass/partials/_one-col.scss */
 div.one-col div.left .content #home-content #designer, div.one-col div.left .content #home-content .line {
   margin-top: 33px;
 }
 @media screen and (max-width: 400px) {
-  /* line 89, ../sass/partials/_one-col.scss */
+  /* line 92, ../sass/partials/_one-col.scss */
   div.one-col div.left .content #home-content #designer, div.one-col div.left .content #home-content .line {
     margin-top: 20px;
   }
 }
-/* line 96, ../sass/partials/_one-col.scss */
+/* line 99, ../sass/partials/_one-col.scss */
 div.one-col div.left .content .cta {
   #border-bottom: 1px solid #323232;
   height: 44px;
@@ -386,19 +392,19 @@ div.one-col div.left .content .cta {
   margin-bottom: 70px;
 }
 @media screen and (max-width: 960px) {
-  /* line 96, ../sass/partials/_one-col.scss */
+  /* line 99, ../sass/partials/_one-col.scss */
   div.one-col div.left .content .cta {
     width: 300px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 830px) {
-  /* line 96, ../sass/partials/_one-col.scss */
+  /* line 99, ../sass/partials/_one-col.scss */
   div.one-col div.left .content .cta {
     margin: 0;
   }
 }
-/* line 109, ../sass/partials/_one-col.scss */
+/* line 112, ../sass/partials/_one-col.scss */
 div.one-col div.left .content .cta > a {
   background: url("../../images/circle.png") no-repeat scroll right 1px transparent;
   color: #323232;
@@ -424,14 +430,14 @@ div.one-col div.left .content .cta > a {
   transition: ease 0.5s color;
 }
 @media screen and (max-width: 830px) {
-  /* line 109, ../sass/partials/_one-col.scss */
+  /* line 112, ../sass/partials/_one-col.scss */
   div.one-col div.left .content .cta > a {
     float: left;
     margin-top: 35px;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 109, ../sass/partials/_one-col.scss */
+  /* line 112, ../sass/partials/_one-col.scss */
   div.one-col div.left .content .cta > a {
     margin-top: 0;
   }
@@ -460,15 +466,15 @@ div.one-col div.left .content .cta > a {
     opacity: 1;
   }
 }
-/* line 137, ../sass/partials/_one-col.scss */
+/* line 140, ../sass/partials/_one-col.scss */
 div.one-col div.left .content .cta > a:hover {
   color: #d8df21;
 }
-/* line 141, ../sass/partials/_one-col.scss */
+/* line 144, ../sass/partials/_one-col.scss */
 div.one-col div.left .content .contact-links {
   margin-top: 20px;
 }
-/* line 145, ../sass/partials/_one-col.scss */
+/* line 148, ../sass/partials/_one-col.scss */
 div.one-col div.left .content .contact-links > a {
   display: block;
   float: left;
@@ -482,20 +488,20 @@ div.one-col div.left .content .contact-links > a {
   -webkit-transition: ease 0.5s all;
   transition: ease 0.5s all;
 }
-/* line 156, ../sass/partials/_one-col.scss */
+/* line 159, ../sass/partials/_one-col.scss */
 div.one-col div.left .content .contact-links > a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 160, ../sass/partials/_one-col.scss */
+/* line 163, ../sass/partials/_one-col.scss */
 div.one-col div.left .content a.facebook {
   background: url("../../images/facebook.png") no-repeat 0 0 transparent;
 }
-/* line 164, ../sass/partials/_one-col.scss */
+/* line 167, ../sass/partials/_one-col.scss */
 div.one-col div.left .content a.google {
   background: url("../../images/google_plus.png") no-repeat 0 0 transparent;
 }
-/* line 168, ../sass/partials/_one-col.scss */
+/* line 171, ../sass/partials/_one-col.scss */
 div.one-col div.left .content a.linkedin {
   background: url("../../images/linkedin.png") no-repeat 0 0 transparent;
 }
@@ -511,43 +517,43 @@ div.one-col div.left .content a.linkedin {
     max-width: 100%;
   }
 }
-/* line 181, ../sass/partials/_one-col.scss */
+/* line 184, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col {
   max-width: 580px;
   padding: 25px 25px 25px 0;
 }
 @media screen and (max-width: 970px) {
-  /* line 181, ../sass/partials/_one-col.scss */
+  /* line 184, ../sass/partials/_one-col.scss */
   div.one-col div.left .content.one-col {
     max-width: 60%;
   }
 }
 @media screen and (max-width: 970px) {
-  /* line 181, ../sass/partials/_one-col.scss */
+  /* line 184, ../sass/partials/_one-col.scss */
   div.one-col div.left .content.one-col {
     max-width: 50%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 181, ../sass/partials/_one-col.scss */
+  /* line 184, ../sass/partials/_one-col.scss */
   div.one-col div.left .content.one-col {
     max-width: 100%;
   }
 }
-/* line 194, ../sass/partials/_one-col.scss */
+/* line 197, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col .text {
   padding-left: 0px;
 }
-/* line 197, ../sass/partials/_one-col.scss */
+/* line 200, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col h1 {
   margin-bottom: 10px;
   color: #d8df21;
 }
-/* line 201, ../sass/partials/_one-col.scss */
+/* line 204, ../sass/partials/_one-col.scss */
 div.one-col div.left .content.one-col p {
   padding: 12px 0;
 }
-/* line 208, ../sass/partials/_one-col.scss */
+/* line 211, ../sass/partials/_one-col.scss */
 div.one-col .right {
   position: absolute;
   top: -4px;
@@ -581,7 +587,7 @@ div.one-col .right {
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 208, ../sass/partials/_one-col.scss */
+  /* line 211, ../sass/partials/_one-col.scss */
   div.one-col .right {
     -moz-animation: none;
     -webkit-animation: none;
@@ -589,18 +595,18 @@ div.one-col .right {
   }
 }
 @media screen and (max-width: 710px) {
-  /* line 208, ../sass/partials/_one-col.scss */
+  /* line 211, ../sass/partials/_one-col.scss */
   div.one-col .right {
     right: -52px;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 208, ../sass/partials/_one-col.scss */
+  /* line 211, ../sass/partials/_one-col.scss */
   div.one-col .right {
     display: none;
   }
 }
-/* line 230, ../sass/partials/_one-col.scss */
+/* line 233, ../sass/partials/_one-col.scss */
 div.one-col .right .jacob-william span {
   bottom: 10px;
   color: white;
@@ -609,7 +615,7 @@ div.one-col .right .jacob-william span {
   font-family: Vegur;
 }
 @media screen and (max-width: 710px) {
-  /* line 230, ../sass/partials/_one-col.scss */
+  /* line 233, ../sass/partials/_one-col.scss */
   div.one-col .right .jacob-william span {
     right: -66px;
   }
@@ -625,7 +631,7 @@ div.one-col .right .jacob-william span {
   display: block;
   font-size: 1.7em;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 0 0 20px;
 }
 /* line 12, ../sass/partials/_portfolio.scss */
 .portfolio-archive h2 a {
@@ -634,18 +640,25 @@ div.one-col .right .jacob-william span {
   display: block;
   float: left;
   padding: 7px 13px;
+  border: 1px solid #d8df21;
 }
-/* line 19, ../sass/partials/_portfolio.scss */
+/* line 20, ../sass/partials/_portfolio.scss */
 .portfolio-archive h2 a:hover {
   background-color: white;
   color: #d8df21;
   border: 1px solid #d8df21;
 }
-/* line 26, ../sass/partials/_portfolio.scss */
+@media screen and (max-width: 700px) {
+  /* line 6, ../sass/partials/_portfolio.scss */
+  .portfolio-archive h2 {
+    margin-top: 15px;
+  }
+}
+/* line 30, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view {
   float: right;
 }
-/* line 28, ../sass/partials/_portfolio.scss */
+/* line 32, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view div {
   background: url("../../images/view.png") no-repeat scroll 0 -36px transparent;
   cursor: pointer;
@@ -655,30 +668,39 @@ div.one-col .right .jacob-william span {
   margin-top: 35px;
   diplay: block;
 }
-/* line 37, ../sass/partials/_portfolio.scss */
+/* line 41, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view label input:checked + div.list {
   background-position: -36px -36px;
 }
-/* line 40, ../sass/partials/_portfolio.scss */
+/* line 44, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view label input + div.list {
   background-position: -36px 0px;
 }
-/* line 43, ../sass/partials/_portfolio.scss */
+/* line 47, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view label input:checked + div.grid {
   background-position: 0px 0px;
 }
-/* line 46, ../sass/partials/_portfolio.scss */
+/* line 50, ../sass/partials/_portfolio.scss */
 .portfolio-archive .view input {
   display: none;
 }
-/* line 51, ../sass/partials/_portfolio.scss */
+/* line 55, ../sass/partials/_portfolio.scss */
 .portfolio-archive .excerpt {
   float: left;
-  margin-top: 17px;
   margin-bottom: 17px;
-  width: 75%;
+  width: 45%;
+  margin-left: 5%;
 }
-/* line 59, ../sass/partials/_portfolio.scss */
+@media screen and (max-width: 700px) {
+  /* line 55, ../sass/partials/_portfolio.scss */
+  .portfolio-archive .excerpt {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+/* line 69, ../sass/partials/_portfolio.scss */
 .portfolio-archive a.portfolio-more {
   background: url("../../images/circle_small.png") no-repeat scroll right 0 transparent;
   display: block;
@@ -690,11 +712,18 @@ div.one-col .right .jacob-william span {
   float: right;
   clear: right;
 }
-/* line 71, ../sass/partials/_portfolio.scss */
+@media screen and (max-width: 700px) {
+  /* line 69, ../sass/partials/_portfolio.scss */
+  .portfolio-archive a.portfolio-more {
+    float: none;
+    margin: 0 auto;
+  }
+}
+/* line 85, ../sass/partials/_portfolio.scss */
 .portfolio-archive a.portfolio-more:hover {
   text-decoration: underline;
 }
-/* line 75, ../sass/partials/_portfolio.scss */
+/* line 89, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters {
   border-top: 1px solid #323232;
   border-bottom: 1px solid #323232;
@@ -702,7 +731,7 @@ div.one-col .right .jacob-william span {
   margin-top: 10px;
   clear: both;
 }
-/* line 82, ../sass/partials/_portfolio.scss */
+/* line 96, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .title {
   color: white;
   background: #323232;
@@ -710,7 +739,7 @@ div.one-col .right .jacob-william span {
   font-family: Vegur;
   float: left;
 }
-/* line 89, ../sass/partials/_portfolio.scss */
+/* line 103, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .filter {
   float: left;
   background: #656565;
@@ -720,68 +749,84 @@ div.one-col .right .jacob-william span {
   cursor: pointer;
   margin: 3px 0 3px 10px;
 }
-/* line 98, ../sass/partials/_portfolio.scss */
+/* line 112, ../sass/partials/_portfolio.scss */
 .portfolio-archive .filters .filter.active {
   background: #d8df21;
 }
-/* line 103, ../sass/partials/_portfolio.scss */
+/* line 117, ../sass/partials/_portfolio.scss */
 .portfolio-archive .loading {
   display: none;
   padding: 80px;
   text-align: center;
 }
-/* line 109, ../sass/partials/_portfolio.scss */
+/* line 123, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items {
   margin-top: 35px;
   padding: 0;
 }
-/* line 112, ../sass/partials/_portfolio.scss */
+/* line 126, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item {
   border-top: 1px solid #323232;
-  margin-bottom: 40px;
+  padding-top: 40px;
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
-/* line 119, ../sass/partials/_portfolio.scss */
+/* line 133, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item:first-of-type {
   border-top: 0 none;
 }
-/* line 123, ../sass/partials/_portfolio.scss */
+/* line 137, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item:last-of-type {
-  border-bottom: 1px solid #323232;
+  margin-bottom: 40px;
 }
-/* line 127, ../sass/partials/_portfolio.scss */
+/* line 141, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items a.grid {
   float: left;
   margin: 20px;
 }
-/* line 133, ../sass/partials/_portfolio.scss */
+/* line 147, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.rectangle .images img {
   box-sizing: border-box;
   width: 100%;
 }
-/* line 139, ../sass/partials/_portfolio.scss */
+/* line 153, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .images {
   clear: both;
   overflow: hidden;
   text-align: center;
+  width: 50%;
+  float: left;
 }
-/* line 146, ../sass/partials/_portfolio.scss */
+@media screen and (max-width: 700px) {
+  /* line 153, ../sass/partials/_portfolio.scss */
+  .portfolio-archive .items .images {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 166, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .images {
   width: 50%;
   float: left;
   margin-top: 20px;
 }
-/* line 151, ../sass/partials/_portfolio.scss */
+@media screen and (max-width: 700px) {
+  /* line 166, ../sass/partials/_portfolio.scss */
+  .portfolio-archive .items .item.square .images {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+/* line 175, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .image-wrapper {
   box-sizing: border-box;
   width: 100%;
 }
-/* line 156, ../sass/partials/_portfolio.scss */
+/* line 180, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs {
   margin-top: 40px;
 }
-/* line 158, ../sass/partials/_portfolio.scss */
+/* line 182, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs .thumb {
   display: block;
   float: left;
@@ -792,20 +837,27 @@ div.one-col .right .jacob-william span {
   cursor: pointer;
   border: 1px solid;
 }
-/* line 167, ../sass/partials/_portfolio.scss */
+/* line 191, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs .thumb img {
   width: 100%;
 }
-/* line 171, ../sass/partials/_portfolio.scss */
+/* line 195, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs .thumb.current {
   border: 2px solid #d8df21;
 }
-/* line 175, ../sass/partials/_portfolio.scss */
+/* line 199, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .excerpt {
-  float: right;
+  float: left;
   width: 45%;
   margin-left: 5%;
   margin-top: 0;
+}
+@media screen and (max-width: 700px) {
+  /* line 199, ../sass/partials/_portfolio.scss */
+  .portfolio-archive .items .item.square .excerpt {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /* line 1, ../sass/partials/footer.scss */
@@ -840,6 +892,7 @@ footer {
   letter-spacing: 5px;
   padding-bottom: 3px;
   position: relative;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 1000px) {
   /* line 16, ../sass/partials/footer.scss */

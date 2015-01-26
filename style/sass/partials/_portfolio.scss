@@ -8,18 +8,22 @@
 	    display: block;
 	    font-size: 1.7em;
 	    overflow: hidden;
-	    padding: 20px 0;
+	    padding: 0 0 20px;
 		a{
 			background: none repeat scroll 0 0 $green;
 		    color: white;
 		    display: block;
 		    float: left;
 		    padding: 7px 13px;
+		    border: 1px solid $green;
 		}
 		a:hover{
 			background-color: white;
 			color: $green;
 			border: 1px solid $green;
+		}
+		@media screen and (max-width: 700px){
+			margin-top: 15px;
 		}
 	}
 	
@@ -50,9 +54,15 @@
 	
 	.excerpt {
 	    float: left;
-	    margin-top: 17px;
 	    margin-bottom: 17px;
-	    width: 75%;
+	    width: 45%;
+	    margin-left: 5%;
+	    @media screen and (max-width: 700px){
+	    	width: 100%;
+	    	margin-left: 0;
+	    	margin-top: 15px;
+	    	margin-bottom: 0;
+	    }
 	}
 
 	
@@ -66,6 +76,10 @@
 	    width: 180px;
 	    float: right;
 	    clear: right;
+	   @media screen and (max-width: 700px){
+	  	float: none;
+	  	margin: 0 auto;
+	   }
 	}
 	
 	a.portfolio-more:hover{
@@ -111,9 +125,9 @@
 		padding: 0;
 		.item {
 		    border-top: 1px solid $gray;
-			margin-bottom: 40px;
+			padding-top: 40px;
 			overflow: hidden;
-			padding-bottom: 20px;
+			padding-bottom: 40px;
 		}
 		
 		.item:first-of-type{
@@ -121,7 +135,7 @@
 		}
 		
 		.item:last-of-type{
-			border-bottom: 1px solid $gray;
+			margin-bottom: 40px;
 		}
 		
 		a.grid{
@@ -140,6 +154,12 @@
 			clear: both;
 		    overflow: hidden;
 		    text-align: center;
+		    width: 50%;
+		    float: left;
+		    @media screen and (max-width: 700px){
+		    	width: 100%;
+		    	float: none;
+		    }
 		}
 		
 		.item.square{
@@ -147,6 +167,10 @@
 				width: 50%;
 				float: left;
 				margin-top: 20px;
+				@media screen and (max-width: 700px){
+					margin-top: 0;
+					width: 100%;
+				}
 			}
 			.image-wrapper{
 			    box-sizing: border-box;
@@ -173,10 +197,14 @@
 					}
 				}
 			.excerpt{
-				float: right;
+				float: left;
 				width: 45%;
 				margin-left: 5%;
 				margin-top: 0;
+				@media screen and (max-width: 700px){
+					width: 100%;
+					margin-left: 0;
+				}
 			}
 		}
 	}
