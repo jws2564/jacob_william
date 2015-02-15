@@ -26,9 +26,9 @@
 
 			$.post(settings.url, data, function(response){
 				$(settings.container).html(response);
-				$(settings.loader).hide();
-				$(settings.container).show();
-				$(window).scrollTop(scroll);
+				$(settings.loader).fadeOut(function(){ $(settings.container).show(); $(window).scrollTop(scroll); });
+				
+				
 			});
 		};
 		
@@ -56,9 +56,6 @@
 		
 		return { init: init };
 	}();
-	
-	
-	
 	
 	//doc read 
 	$(function(){

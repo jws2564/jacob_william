@@ -15,12 +15,10 @@
 		    display: block;
 		    float: left;
 		    padding: 7px 13px;
-		    border: 1px solid $green;
 		}
 		a:hover{
-			background-color: white;
-			color: $green;
-			border: 1px solid $green;
+			background-color: $light-gray;
+			color: white;
 		}
 		@media screen and (max-width: 700px){
 			margin-top: 15px;
@@ -29,6 +27,10 @@
 	
 	.view{
 		float: right;
+		    @media screen and (max-width: 500px){
+    			margin-top: 10px;
+    			margin-bottom: 25px;
+		    }
 		div{
 			background: url("../../images/view.png") no-repeat scroll 0 -36px transparent;
 		    cursor: pointer;
@@ -37,6 +39,9 @@
 		    width: 32px;
 		    margin-top: 35px;
 		    diplay: block;
+			@media screen and (max-width: 500px){
+				margin-top: 0;
+			}
 		}
 		label input:checked + div.list{
 			background-position: -36px -36px;
@@ -67,7 +72,7 @@
 
 	
 	a.portfolio-more{
-	    background: url("../../images/circle_small.png") no-repeat scroll right 0 transparent;
+	    background: url("../../images/circle_small.png") no-repeat scroll right center /70px transparent;
 	    display: block;
 	    font-size: 1.3em;
 	    height: 83px;
@@ -79,6 +84,8 @@
 	   @media screen and (max-width: 700px){
 	  	float: none;
 	  	margin: 0 auto;
+	  	margin-top: 20px; 
+	  	background: url("../../images/circle_small.png") no-repeat scroll 105px center / 75px auto transparent;
 	   }
 	}
 	
@@ -99,6 +106,14 @@
 			padding: 13px 20px;
 			font-family: $body-copy-regular;
 			float: left;
+			@media screen and (max-width: 500px){
+			    float: none;
+			    font-size: 0.8em;
+			    margin-bottom: 2px;
+			    padding: 3px;
+			    text-align: center;
+			    width: 100%;
+			}
 		}
 		.filter{
 			float: left; 
@@ -108,9 +123,23 @@
 			padding: 10px;
 			cursor: pointer;
 			margin: 3px 0 3px 10px;
+			@media screen and (max-width: 500px){
+    			margin: 3px 0 5px 10px;
+			}
+		}
+		.filter:hover{
+			background: #939393;
 		}
 		.filter.active{
 			background: $green;
+		}
+		.filter.active:after{
+			background: url("../../images/close.png") no-repeat right center;
+		    content: "";
+		    display: block;
+		    float: right;
+		    height: 15px;
+		    width: 29px;
 		}
 	}
 	
@@ -123,15 +152,38 @@
 	.items{
 		margin-top: 35px;
 		padding: 0;
+		overflow: hidden;
 		.item {
 		    border-top: 1px solid $gray;
 			padding-top: 40px;
 			overflow: hidden;
 			padding-bottom: 40px;
+			
+			@media screen and (max-width: 700px){
+				padding-top: 20px;
+			}
+			
+			> h2{
+				display: none;
+				@media screen and (max-width: 700px){
+					display: block;
+					margin-bottom: 10px;
+				}
+			}
+			
+			.excerpt h2{
+				@media screen and (max-width: 700px){
+					display: none;
+				}
+			}
 		}
 		
 		.item:first-of-type{
 			border-top: 0 none;
+			@media screen and (max-width: 700px){
+				padding-top: 0;
+			}
+			
 		}
 		
 		.item:last-of-type{
@@ -139,8 +191,27 @@
 		}
 		
 		a.grid{
-			float: left;
-			margin: 20px;
+		    float: left;
+		    margin-bottom: 20px;
+		    margin-right: 4%;
+		    overflow: hidden;
+		    width: 21%;
+		    text-align: center;
+		    
+		    @media screen and (max-width: 700px){
+		    	width: 46%;
+		    	min-height: 170px;
+		    }
+		    
+		    @media screen and (max-width: 400px){
+		    	min-height: 100px;
+		    }
+		    
+		    
+		    img{
+		    	max-width: 100%;
+		    }
+
 		}
 		
 		.item.rectangle{
@@ -188,6 +259,8 @@
 					    height: 80px;
 					    cursor: pointer;
 					    border: 1px solid;
+					    box-sizing: border-box;
+					    margin-bottom: 10px;
 					    img{
 					    	width: 100%;
 					    }
@@ -207,5 +280,109 @@
 				}
 			}
 		}
+	}
+}
+
+.portfolio.single{
+	margin-top: 20px;
+	a.back {
+	    background: none repeat scroll 0 0 $light-gray;
+	    color: white;
+	    display: block;
+	    float: left;
+	    font-size: 0.7em;
+	    margin-bottom: 28px;
+	    padding: 6px;
+	}
+	
+	a.back:hover{
+		background: $green;
+	}
+	
+	h1 {
+	    background: none repeat scroll 0 0 $green; 
+	    clear: both;
+	    color: white;
+	    float: left;
+	    font-size: 2em;
+	    padding: 10px 15px;
+	}
+	
+	.content{
+		clear: both;
+	}
+	
+	.gallery, div[id^="gallery-"] {
+		float: right;
+		width: 71%;
+		margin-left: 4% !important;
+	}
+	
+	.gallery .gallery-item, div[id^="gallery-"].gallery-item {
+	    margin-right: 10px !important;
+	    width: auto !important;
+	}
+	
+	.tag-wrapper {
+	    border-bottom: 1px solid $gray;
+	    float: left;
+	    margin-bottom: 20px;
+	    margin-top: 20px;
+	    padding-bottom: 20px;
+	    width: 25%;
+	}
+	
+	.tags {
+	    font-family: Vegur Light;
+	    font-style: italic;
+	    margin-bottom: 10px;
+	}
+	
+	.portfolio-link-back {
+	    background: url("../../images/circle_small_left.png") no-repeat scroll left center / 40px auto transparent;
+	    display: block;
+	    float: left;
+	    height: 45px;
+	    line-height: 45px;
+	    margin-top: 5px;
+	    padding-left: 50px;
+	    color: $light-gray;
+	   	clear: both;
+	    margin-bottom: 50px;
+	}
+	
+	.portfolio-link-back:hover{
+		color: $green;
+		text-decoration: underline;
+	}
+	
+	.view-the-site {
+	    background: none repeat scroll 0 0 $light-gray;
+	    color: white;
+	    display: block;
+	    padding: 10px;
+	    text-align: center;
+	    width: 25%;
+	    box-sizing: border-box;
+	}
+	
+	.view-the-site:hover{
+		background: $green;
+	}
+	
+	.slider-wrapper {
+	    overflow: hidden;
+	    width: 100%;
+	    
+	    .images{
+	    	overflow: hidden;
+	    }
+	    
+	    img{
+	    	max-width: 100%;
+	    	border: 0 none !important;
+	    	float: left;
+	    	display: block;
+	    }
 	}
 }

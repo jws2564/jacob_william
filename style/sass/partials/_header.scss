@@ -3,12 +3,15 @@ div.one-col header.main nav {
 }
 
 header.zig.main{
+	@media screen and (max-width: 500px){
+		background: none transparent;
+	}
 	background: url("../../images/zig.png") no-repeat right 1px transparent;
 		nav{
 			@media screen and (max-width: 900px){
 					border-top: 1px $light-gray solid;
 			}
-	}
+		}
 	a.logo {
 	    @media screen and (max-width: 900px){
 			border-bottom: 0 none;
@@ -27,11 +30,7 @@ header.main {
 			    padding-top: 14px;
 			    width: 179px;
 			    @media screen and (max-width: 900px){
-					border-bottom: 1px solid $gray;
 					background-position: 0px 14px;
-				}
-				@media screen and (max-width: 640px){
-					width: 100%;
 				}
 			}
 			
@@ -39,6 +38,9 @@ header.main {
 				border-top: 1px solid $gray;
 				@media screen and (max-width: 900px){
 					border-top: 0 none;
+				}
+				@media screen and (max-width: 640px){
+					border-top: 1px solid $gray;
 				}
 				li {
 					float:left;
@@ -62,6 +64,7 @@ header.main {
 					background: url("../../images/arrow.png") 0 15px no-repeat transparent;
 					a {
 						padding-left: 10px;
+						color: $green;
 					}
 				}
 			}

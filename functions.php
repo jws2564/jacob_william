@@ -20,6 +20,9 @@ function jws_enqueue_script() {
 		wp_enqueue_script( 'Portfolio', get_template_directory_uri().'/scripts/portfolio.js', array('jquery'), true);
 		wp_localize_script( 'Portfolio', 'jws_ajax',array( 'ajax_url' => admin_url( 'admin-ajax.php' )) );
 	}
+	if($post->post_type == 'jws_portfolio_item' && is_single()){
+		wp_enqueue_script( 'Slider', get_template_directory_uri().'/scripts/slider.js', array('jquery'), true);
+	}
 }
 
 add_filter( 'wp_title', 'jws_hack_wp_title_for_home' );
@@ -131,7 +134,8 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 	if($_POST['view'] == 'list' || !$_POST['view']){
 
 		if(has_term("square", 'jws_portfolio', $id)) : ?>
-			<div class="item square">	
+			<div class="item square">
+				<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>	
 				<div class="images">
 				<?php $image = array_shift($images); ?>
 				<div class="image-wrapper">
@@ -151,7 +155,7 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 				<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
 		<?php else: ?>
 			<div class="item rectangle">
-			
+			<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
 			<div class="images">
 				<?php if(!empty($images)):?>
 					<?php $image = array_shift($images); ?>

@@ -40,7 +40,7 @@ div.one-col{
 					margin-top: 40px;
 				}
 				@media screen and (max-width: 320px){
-					margin-top: 20px;
+					margin-top: 30px;
 				}
 				#developer, #designer{
 					text-decoration: none;
@@ -97,7 +97,6 @@ div.one-col{
 				}
 			}
 			.cta{
-				#border-bottom: 1px solid $gray;
 			    height: 44px;
 			    margin-right: 36px;
 			    margin-bottom: 70px;
@@ -110,6 +109,7 @@ div.one-col{
 			    }
 			}
 			.cta > a{
+				color: $light-gray; 
 				@media screen and (max-width: 830px){
 					float: left;
 					margin-top: 35px;
@@ -118,7 +118,9 @@ div.one-col{
 			    	margin-top: 0;
 			    }
 			   	background: url("../../images/circle.png") no-repeat scroll right 1px transparent;
-			    color: $gray;
+			   	@media screen and (max-width: 640px){
+			   		background: url("../../images/circle.png") no-repeat scroll 114px 11px / 70px transparent;
+			   	}
 			    #display: block;
 			    float: right;
 			    font-family: $body-copy-regular;
