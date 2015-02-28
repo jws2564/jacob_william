@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 <div class="content portfolio-archive">
 	<h1>Portfolio</h1>	
+	<?php if(false): ?>
 	<div class="view">
 		<label><input type="radio" name="view" value="list" checked="true"><div class="list"></div></label>
 		<label><input type="radio" name="view" value="grid"><div class="grid"></div></label>
 	</div>
+	<?php endif;?>
 	
 	<div class="filters">
 		<div class="title">Filters</div>

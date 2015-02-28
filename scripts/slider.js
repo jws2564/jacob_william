@@ -8,28 +8,43 @@
 				current_image_class : "current",
 				slider_wrapper_class : "slider-wrapper", 
 				next_class : "next-slide", 
-				prev_class : "prev-slide"
+				prev_class : "prev-slide", 
+				thumb_class : "gallery-item a"
 		};
 		
-		var next = function(){
+		var move = function(button){
 			//do something 
 			var current = this.parent().find('.'+settings.current_image_class);
-			var next = current.next();
 			
-			var images = this.parent().next();
+			if(button == 'next'){
+				var next = current.next();
+				//make it circular
+				if(!next.length){
+					//grab the first image
+					next = $('.'+settings.images_class+" img:first");
+				}
+			}else if(button == 'prev'){
+				var next = current.prev();
+				//make it circular
+				if(!next.length){
+					//grab the last image
+					next = $('.'+settings.images_class+" img:last");
+				}
+			}else{
+				//clicked a thumb, find the image that matches the href
+				current = $('.'+settings.images_class).find('.'+settings.current_image_class);
+				next = $('.'+settings.images_class).find('img[src="'+this.attr('href')+'"]');
+			}
 			
-			
-			current.removeClass(settings.current_image_class);
-			next.addClass(settings.current_image_class);
-			
-			//resize
+			current.hide().removeClass(settings.current_image_class);
+			next.fadeIn().addClass(settings.current_image_class);
 			
 		}
 		
 		var setup_gallery = function(gallery){
 			
-			//add navigation
-			gallery.prepend("<div class='"+settings.next_class+"'>NEXT</div><div class='"+settings.prev_class+"'>PREV</div>");
+			//move gallery after content 
+			gallery.parent().before(gallery);
 			
 			//create large image display
 			var images = $("<div class='"+settings.images_class+"'></div>");
@@ -39,15 +54,21 @@
 				images.append("<img src='"+$(this).attr("href")+"' class='"+(first ? settings.current_image_class : '')+"' />");
 				first = false;
 			});
-			images.wrapAll("<div class='"+settings.slider_wrapper_class+"'><div class='slide'></div></div>");
-			gallery.prepend(images.parent().parent());
+			images.wrapAll("<div class='"+settings.slider_wrapper_class+"'></div>");
+			gallery.append(images.parent());
 			
-			//set the height and width
-			images.css({'height' : images.find('.'+settings.current_image_class).height(), 'width': images.find('.'+settings.current_image_class).width() });
 			
-			//attach listeners 
+			if($("."+settings.images_class+" img").size() > 1){
+				//add navigation
+				gallery.prepend("<div class='"+settings.next_class+"'></div><div class='"+settings.prev_class+"'></div>");
+				
+				//attach listeners for nav buttons
+				$('.'+settings.next_class).click(function(){ move.call($(this), 'next'); });
+				$('.'+settings.prev_class).click(function(){ move.call($(this), 'prev'); });
+			}
 			
-			$('.'+settings.next_class).click(function(){ next.apply($(this)); });
+			//listeners for thumbs 
+			$('.'+settings.thumb_class).click(function(e){ e.preventDefault();  move.apply($(this));  });
 			
 		};
 		

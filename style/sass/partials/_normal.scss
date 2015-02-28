@@ -37,16 +37,17 @@ body.single .main-wrapper, body.archive .main-wrapper, body.search .main-wrapper
 }
 
 a[rel="tag"] {
-    border: 1px solid;
     display: block;
     float: left;
     margin-bottom: 10px;
     margin-right: 10px;
     padding: 10px;
-    color: $light-gray;
+    background: $light-gray;
+    color: white;
 }
 
 a[rel="tag"]:hover{
-	color: $green;
+	background: $green;
+	color:white;
 }
  

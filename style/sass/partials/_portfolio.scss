@@ -218,6 +218,7 @@
 			.images img {
 			    box-sizing: border-box;
 			    width: 100%;
+			    height: auto;
 			}
 		}
 		
@@ -246,6 +247,7 @@
 			.image-wrapper{
 			    box-sizing: border-box;
 			    width: 100%;
+			    height: auto;
 			
 			}
 				.thumbs{
@@ -285,6 +287,7 @@
 
 .portfolio.single{
 	margin-top: 20px;
+	overflow: hidden;
 	a.back {
 	    background: none repeat scroll 0 0 $light-gray;
 	    color: white;
@@ -300,36 +303,98 @@
 	}
 	
 	h1 {
-	    background: none repeat scroll 0 0 $green; 
-	    clear: both;
-	    color: white;
-	    float: left;
-	    font-size: 2em;
-	    padding: 10px 15px;
+		clear: both;
+		margin-top: 50px;
+		margin-bottom: 20px;
 	}
 	
 	.content{
 		clear: both;
 	}
 	
+	.gallery:hover{
+		.next-slide, .prev-slide{
+			display: block;
+			@media screen and (max-width: 700px){
+				display: none;
+			}
+		}
+	}
+	
 	.gallery, div[id^="gallery-"] {
 		float: right;
-		width: 71%;
-		margin-left: 4% !important;
+		width: 65%;
+		margin-left: 5% !important;
+		position: relative;
+		padding-top: 10px;
+		
+		@media screen and (max-width: 700px){
+	    	width: 100%;
+	    }
+		
+		.next-slide, .prev-slide{
+	    	postion: relative;
+	    	background: url("../../images/circle_small.png") no-repeat scroll left center / 60px auto transparent;
+	    	height: 60px;
+	    	width: 60px;
+	    	position: absolute;
+	    	right: 0px;
+	    	top: 250px;
+	    	z-index: 10;
+	    	cursor: pointer;
+	    	display: none;
+	    	animation: 3s fas all;
+	    	@media screen and (max-width: 700px){
+	    		top: 150px;
+	    	}
+	    }
+	    
+	    .prev-slide{
+	    	background: url("../../images/circle_small_left.png") no-repeat scroll left center / 60px auto transparent;
+	    	left: 0px;
+	    }
+	    
+	    .attachment-thumbnail {
+		    height: 50px;
+		    width: 50px;
+		}
+	    
+	    .slider-wrapper {
+		    overflow: hidden;
+		    width: 100%;
+		    position: relative;
+		    
+		    .images{
+		    	overflow: visible;
+		    	margin: 0 auto;
+		    	text-align: center;
+		    }
+		    
+		    img{
+		    	max-width: 100%;
+		    	border: 0 none !important;
+		    	display: none;
+		    }
+		    
+		    .current{
+		    	display: inline;
+		    }
+		    
+		}
 	}
 	
 	.gallery .gallery-item, div[id^="gallery-"].gallery-item {
 	    margin-right: 10px !important;
 	    width: auto !important;
+	    margin-bottom: 5px;
 	}
 	
 	.tag-wrapper {
-	    border-bottom: 1px solid $gray;
 	    float: left;
 	    margin-bottom: 20px;
 	    margin-top: 20px;
 	    padding-bottom: 20px;
-	    width: 25%;
+	    width: 100%;
 	}
 	
 	.tags {
@@ -339,16 +404,14 @@
 	}
 	
 	.portfolio-link-back {
-	    background: url("../../images/circle_small_left.png") no-repeat scroll left center / 40px auto transparent;
+	    background: url("../../images/circle_small_left.png") no-repeat scroll left center / 20px auto transparent;
 	    display: block;
 	    float: left;
-	    height: 45px;
-	    line-height: 45px;
-	    margin-top: 5px;
-	    padding-left: 50px;
+	    height: 30px;
+	    line-height: 30px;
+	    padding-left: 25px;
 	    color: $light-gray;
-	   	clear: both;
-	    margin-bottom: 50px;
+	    font-size: .75em;
 	}
 	
 	.portfolio-link-back:hover{
@@ -357,32 +420,37 @@
 	}
 	
 	.view-the-site {
-	    background: none repeat scroll 0 0 $light-gray;
+	    background: none repeat scroll 0 0 $green;
 	    color: white;
 	    display: block;
 	    padding: 10px;
 	    text-align: center;
-	    width: 25%;
 	    box-sizing: border-box;
+	    font-family: $body-copy-regular; 
+	    font-size: 1.1em;
 	}
 	
 	.view-the-site:hover{
-		background: $green;
+		background: $light-gray;
 	}
 	
-	.slider-wrapper {
-	    overflow: hidden;
-	    width: 100%;
-	    
-	    .images{
-	    	overflow: hidden;
-	    }
-	    
-	    img{
-	    	max-width: 100%;
-	    	border: 0 none !important;
-	    	float: left;
-	    	display: block;
+	.view-the-site.not-available{
+	    background: none repeat scroll 0 0 transparent;
+	    border: 1px solid;
+	    color: $light-gray;
+	}
+	
+	.view-the-site.not-available:hover{
+		background: transparent;
+	}
+	
+	.portfolio-content {
+	    float: left;
+	    width: 30%;
+	    @media screen and (max-width: 700px){
+	    	width: 100%;
+	    	margin-top: 20px;
 	    }
 	}
+	
 }

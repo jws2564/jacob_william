@@ -55,13 +55,13 @@ function jws_create_post_types() {
 	register_post_type( 'jws_portfolio_item',
 		array(
 		'labels' => array(
-			'name' => 'Portfolio Items',
+			'name' => 'Portfolio',
 			'singular_name' => 'Item', 
 			'menu_name' => 'Portfolio'
 			),
 		'public' => true,
 		'has_archive' => true,
-		'supports' => array('title', 'editor', 'excerpt'), 
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'), 
 		'has_archive' => true, 
 		'taxonomies' => array('cateogry'),
 		'rewrite' => array('slug'=>'portfolio')
@@ -71,7 +71,7 @@ function jws_create_post_types() {
 
 
 
-add_action('add_meta_boxes', 'jws_add_meta_boxes');
+//add_action('add_meta_boxes', 'jws_add_meta_boxes');
 function jws_add_meta_boxes(){
 	global $post;
 	if($post->post_type == 'jws_portfolio_item'){
@@ -156,11 +156,10 @@ function jws_print_portfolio_print_post($id, $need_excerpt=false){
 		<?php else: ?>
 			<div class="item rectangle">
 			<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>
-			<div class="images">
-				<?php if(!empty($images)):?>
-					<?php $image = array_shift($images); ?>
-					<a href="<?=get_permalink($id)?>"><img src="<?=$image->guid?>" alt="<?=$image->post_title?>"/></a>
-				<?php endif;?>		
+			<div class="images">	
+				<?php if(has_post_thumbnail($id)): ?>
+					<a href="<?=get_permalink($id)?>"><?php echo get_the_post_thumbnail($id); ?></a>
+				<?php endif; ?>
 			</div>
 			<div class="excerpt">
 			<h2><a href="<?=get_permalink($id)?>"><?=get_the_title($id)?></a></h2>

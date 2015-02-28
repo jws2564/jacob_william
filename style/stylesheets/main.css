@@ -242,18 +242,19 @@ body.single .main-wrapper, body.archive .main-wrapper, body.search .main-wrapper
 
 /* line 39, ../sass/partials/_normal.scss */
 a[rel="tag"] {
-  border: 1px solid;
   display: block;
   float: left;
   margin-bottom: 10px;
   margin-right: 10px;
   padding: 10px;
-  color: #656565;
+  background: #656565;
+  color: white;
 }
 
 /* line 49, ../sass/partials/_normal.scss */
 a[rel="tag"]:hover {
-  color: #d8df21;
+  background: #d8df21;
+  color: white;
 }
 
 /* line 1, ../sass/partials/_one-col.scss */
@@ -915,8 +916,9 @@ div.one-col .right .jacob-william span {
 .portfolio-archive .items .item.rectangle .images img {
   box-sizing: border-box;
   width: 100%;
+  height: auto;
 }
-/* line 224, ../sass/partials/_portfolio.scss */
+/* line 225, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .images {
   clear: both;
   overflow: hidden;
@@ -925,35 +927,36 @@ div.one-col .right .jacob-william span {
   float: left;
 }
 @media screen and (max-width: 700px) {
-  /* line 224, ../sass/partials/_portfolio.scss */
+  /* line 225, ../sass/partials/_portfolio.scss */
   .portfolio-archive .items .images {
     width: 100%;
     float: none;
   }
 }
-/* line 237, ../sass/partials/_portfolio.scss */
+/* line 238, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .images {
   width: 50%;
   float: left;
   margin-top: 20px;
 }
 @media screen and (max-width: 700px) {
-  /* line 237, ../sass/partials/_portfolio.scss */
+  /* line 238, ../sass/partials/_portfolio.scss */
   .portfolio-archive .items .item.square .images {
     margin-top: 0;
     width: 100%;
   }
 }
-/* line 246, ../sass/partials/_portfolio.scss */
+/* line 247, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .image-wrapper {
   box-sizing: border-box;
   width: 100%;
+  height: auto;
 }
-/* line 251, ../sass/partials/_portfolio.scss */
+/* line 253, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs {
   margin-top: 40px;
 }
-/* line 253, ../sass/partials/_portfolio.scss */
+/* line 255, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs .thumb {
   display: block;
   float: left;
@@ -966,15 +969,15 @@ div.one-col .right .jacob-william span {
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-/* line 264, ../sass/partials/_portfolio.scss */
+/* line 266, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs .thumb img {
   width: 100%;
 }
-/* line 268, ../sass/partials/_portfolio.scss */
+/* line 270, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .thumbs .thumb.current {
   border: 2px solid #d8df21;
 }
-/* line 272, ../sass/partials/_portfolio.scss */
+/* line 274, ../sass/partials/_portfolio.scss */
 .portfolio-archive .items .item.square .excerpt {
   float: left;
   width: 45%;
@@ -982,18 +985,19 @@ div.one-col .right .jacob-william span {
   margin-top: 0;
 }
 @media screen and (max-width: 700px) {
-  /* line 272, ../sass/partials/_portfolio.scss */
+  /* line 274, ../sass/partials/_portfolio.scss */
   .portfolio-archive .items .item.square .excerpt {
     width: 100%;
     margin-left: 0;
   }
 }
 
-/* line 286, ../sass/partials/_portfolio.scss */
+/* line 288, ../sass/partials/_portfolio.scss */
 .portfolio.single {
   margin-top: 20px;
+  overflow: hidden;
 }
-/* line 288, ../sass/partials/_portfolio.scss */
+/* line 291, ../sass/partials/_portfolio.scss */
 .portfolio.single a.back {
   background: none repeat scroll 0 0 #656565;
   color: white;
@@ -1003,96 +1007,168 @@ div.one-col .right .jacob-william span {
   margin-bottom: 28px;
   padding: 6px;
 }
-/* line 298, ../sass/partials/_portfolio.scss */
+/* line 301, ../sass/partials/_portfolio.scss */
 .portfolio.single a.back:hover {
   background: #d8df21;
 }
-/* line 302, ../sass/partials/_portfolio.scss */
+/* line 305, ../sass/partials/_portfolio.scss */
 .portfolio.single h1 {
-  background: none repeat scroll 0 0 #d8df21;
   clear: both;
-  color: white;
-  float: left;
-  font-size: 2em;
-  padding: 10px 15px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 /* line 311, ../sass/partials/_portfolio.scss */
 .portfolio.single .content {
   clear: both;
 }
-/* line 315, ../sass/partials/_portfolio.scss */
+/* line 316, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery:hover .next-slide, .portfolio.single .gallery:hover .prev-slide {
+  display: block;
+}
+@media screen and (max-width: 700px) {
+  /* line 316, ../sass/partials/_portfolio.scss */
+  .portfolio.single .gallery:hover .next-slide, .portfolio.single .gallery:hover .prev-slide {
+    display: none;
+  }
+}
+/* line 324, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery, .portfolio.single div[id^="gallery-"] {
   float: right;
-  width: 71%;
-  margin-left: 4% !important;
+  width: 65%;
+  margin-left: 5% !important;
+  position: relative;
+  padding-top: 10px;
 }
-/* line 321, ../sass/partials/_portfolio.scss */
+@media screen and (max-width: 700px) {
+  /* line 324, ../sass/partials/_portfolio.scss */
+  .portfolio.single .gallery, .portfolio.single div[id^="gallery-"] {
+    width: 100%;
+  }
+}
+/* line 335, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery .next-slide, .portfolio.single .gallery .prev-slide, .portfolio.single div[id^="gallery-"] .next-slide, .portfolio.single div[id^="gallery-"] .prev-slide {
+  postion: relative;
+  background: url("../../images/circle_small.png") no-repeat scroll left center/60px auto transparent;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 0px;
+  top: 250px;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+  animation: 3s fas all;
+}
+@media screen and (max-width: 700px) {
+  /* line 335, ../sass/partials/_portfolio.scss */
+  .portfolio.single .gallery .next-slide, .portfolio.single .gallery .prev-slide, .portfolio.single div[id^="gallery-"] .next-slide, .portfolio.single div[id^="gallery-"] .prev-slide {
+    top: 150px;
+  }
+}
+/* line 352, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery .prev-slide, .portfolio.single div[id^="gallery-"] .prev-slide {
+  background: url("../../images/circle_small_left.png") no-repeat scroll left center/60px auto transparent;
+  left: 0px;
+}
+/* line 357, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery .attachment-thumbnail, .portfolio.single div[id^="gallery-"] .attachment-thumbnail {
+  height: 50px;
+  width: 50px;
+}
+/* line 362, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery .slider-wrapper, .portfolio.single div[id^="gallery-"] .slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+/* line 367, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery .slider-wrapper .images, .portfolio.single div[id^="gallery-"] .slider-wrapper .images {
+  overflow: visible;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 373, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery .slider-wrapper img, .portfolio.single div[id^="gallery-"] .slider-wrapper img {
+  max-width: 100%;
+  border: 0 none !important;
+  display: none;
+}
+/* line 379, ../sass/partials/_portfolio.scss */
+.portfolio.single .gallery .slider-wrapper .current, .portfolio.single div[id^="gallery-"] .slider-wrapper .current {
+  display: inline;
+}
+/* line 386, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .gallery-item, .portfolio.single div[id^="gallery-"].gallery-item {
   margin-right: 10px !important;
   width: auto !important;
+  margin-bottom: 5px;
 }
-/* line 326, ../sass/partials/_portfolio.scss */
+/* line 392, ../sass/partials/_portfolio.scss */
 .portfolio.single .tag-wrapper {
-  border-bottom: 1px solid #323232;
   float: left;
   margin-bottom: 20px;
   margin-top: 20px;
   padding-bottom: 20px;
-  width: 25%;
+  width: 100%;
 }
-/* line 335, ../sass/partials/_portfolio.scss */
+/* line 400, ../sass/partials/_portfolio.scss */
 .portfolio.single .tags {
   font-family: Vegur Light;
   font-style: italic;
   margin-bottom: 10px;
 }
-/* line 341, ../sass/partials/_portfolio.scss */
+/* line 406, ../sass/partials/_portfolio.scss */
 .portfolio.single .portfolio-link-back {
-  background: url("../../images/circle_small_left.png") no-repeat scroll left center/40px auto transparent;
+  background: url("../../images/circle_small_left.png") no-repeat scroll left center/20px auto transparent;
   display: block;
   float: left;
-  height: 45px;
-  line-height: 45px;
-  margin-top: 5px;
-  padding-left: 50px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 25px;
   color: #656565;
-  clear: both;
-  margin-bottom: 50px;
+  font-size: .75em;
 }
-/* line 354, ../sass/partials/_portfolio.scss */
+/* line 417, ../sass/partials/_portfolio.scss */
 .portfolio.single .portfolio-link-back:hover {
   color: #d8df21;
   text-decoration: underline;
 }
-/* line 359, ../sass/partials/_portfolio.scss */
+/* line 422, ../sass/partials/_portfolio.scss */
 .portfolio.single .view-the-site {
-  background: none repeat scroll 0 0 #656565;
+  background: none repeat scroll 0 0 #d8df21;
   color: white;
   display: block;
   padding: 10px;
   text-align: center;
-  width: 25%;
   box-sizing: border-box;
+  font-family: Vegur;
+  font-size: 1.1em;
 }
-/* line 369, ../sass/partials/_portfolio.scss */
+/* line 433, ../sass/partials/_portfolio.scss */
 .portfolio.single .view-the-site:hover {
-  background: #d8df21;
+  background: #656565;
 }
-/* line 373, ../sass/partials/_portfolio.scss */
-.portfolio.single .slider-wrapper {
-  overflow: hidden;
-  width: 100%;
+/* line 437, ../sass/partials/_portfolio.scss */
+.portfolio.single .view-the-site.not-available {
+  background: none repeat scroll 0 0 transparent;
+  border: 1px solid;
+  color: #656565;
 }
-/* line 377, ../sass/partials/_portfolio.scss */
-.portfolio.single .slider-wrapper .images {
-  overflow: hidden;
+/* line 443, ../sass/partials/_portfolio.scss */
+.portfolio.single .view-the-site.not-available:hover {
+  background: transparent;
 }
-/* line 381, ../sass/partials/_portfolio.scss */
-.portfolio.single .slider-wrapper img {
-  max-width: 100%;
-  border: 0 none !important;
+/* line 447, ../sass/partials/_portfolio.scss */
+.portfolio.single .portfolio-content {
   float: left;
-  display: block;
+  width: 30%;
+}
+@media screen and (max-width: 700px) {
+  /* line 447, ../sass/partials/_portfolio.scss */
+  .portfolio.single .portfolio-content {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* line 1, ../sass/partials/footer.scss */
