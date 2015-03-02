@@ -139,7 +139,7 @@ header.main {
 }
 /* line 25, ../sass/partials/_header.scss */
 header.main a.logo {
-  background: url("../../images/jacob.png") no-repeat scroll -4px 14px transparent;
+  background: url("../../images/jacob.png") no-repeat scroll -4px 14px/100% transparent;
   display: block;
   height: 177px;
   margin-bottom: 12px;
@@ -270,7 +270,7 @@ div.one-col {
 @media screen and (max-width: 1080px) {
   /* line 6, ../sass/partials/_one-col.scss */
   div.one-col {
-    padding: 0 35px;
+    padding: 0 25px;
   }
 }
 @media screen and (max-width: 830px) {

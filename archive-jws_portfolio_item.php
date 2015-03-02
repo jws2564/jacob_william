@@ -11,7 +11,7 @@
 	<div class="filters">
 		<div class="title">Filters</div>
 		<?php $exclude = get_term_by('slug', 'templates', 'jws_portfolio'); $exclude = $exclude->term_id; ?>
-		<?php $filters = get_terms(array('jws_portfolio'), array('exclude_tree'=>array($exclude))); ?>
+		<?php $filters = get_terms(array('jws_portfolio')); ?>
 		<?php foreach($filters as $filter):?>
 			<div class="filter" data-term-id="<?=$filter->term_id?>" data-term-name="<?=$filter->name?>"><?=$filter->name?></div>
 		<?php endforeach;?>
