@@ -1,7 +1,7 @@
 <?=get_header('one-col')?>
 	<div class="content">
 		<div id="home-content">
-			<a id="developer" href="/experience">DEVELOPER</a>
+			<a id="developer" href="/portfolio">DEVELOPER</a>
 			<a id="designer" href="/portfolio">DESIGNER</a>
 			<div class="line"></div>
 		</div>

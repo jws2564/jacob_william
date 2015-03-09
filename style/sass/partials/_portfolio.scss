@@ -306,6 +306,9 @@
 		clear: both;
 		margin-top: 50px;
 		margin-bottom: 20px;
+		@media screen and (max-width: 700px){
+			font-size: 2em;
+		}
 	}
 	
 	.content{

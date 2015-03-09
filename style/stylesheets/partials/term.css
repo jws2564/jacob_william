@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$light-gray".
-        on line 7 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss
+Error: Undefined variable: "$green".
+        on line 24 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/term.scss
 
-2: 	top: -13px;
-3: 	max-width: 629px;
-4: 	@media screen and (max-width: 640px){
-5: 		padding: 10px 0;
-6:     	top: 0;	
-7:     	border-top: 1px solid $light-gray;
-8:     	margin-top: 70px;
-9: 	}
-10: 	@media screen and (max-width: 400px){
-11: 		line-height: 1.6em;
-12: 		text-align: center;
+19: 				font-size: 1.5em;
+20: 		}
+21: 			
+22: 		
+23: 			a{
+24: 		   		background: none repeat scroll 0 0 $green;
+25: 			    color: white;
+26: 			    display: block;
+27: 			    float: left;
+28: 			    padding: 7px 13px;
+29: 			    
 
 Backtrace:
-/Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss:7
+/Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/term.scss:24
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
@@ -29,14 +29,33 @@ Backtrace:
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:502:in `visit_media'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
@@ -85,4 +104,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-gray\".\A         on line 7 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/footer.scss\A \A 2: 	top: -13px;\A 3: 	max-width: 629px;\A 4: 	@media screen and (max-width: 640px){\A 5: 		padding: 10px 0;\A 6:     	top: 0;	\A 7:     	border-top: 1px solid $light-gray;\A 8:     	margin-top: 70px;\A 9: 	}\A 10: 	@media screen and (max-width: 400px){\A 11: 		line-height: 1.6em;\A 12: 		text-align: center;"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 24 of /Users/jacob.streckfus/Sites/jacob_william/public/wp-content/themes/jacob_william/style/sass/partials/term.scss\A \A 19: 				font-size: 1.5em;\A 20: 		}\A 21: 			\A 22: 		\A 23: 			a{\A 24: 		   		background: none repeat scroll 0 0 $green;\A 25: 			    color: white;\A 26: 			    display: block;\A 27: 			    float: left;\A 28: 			    padding: 7px 13px;\A 29: 			    "; }

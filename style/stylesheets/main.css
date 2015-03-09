@@ -1017,21 +1017,27 @@ div.one-col .right .jacob-william span {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-/* line 311, ../sass/partials/_portfolio.scss */
+@media screen and (max-width: 700px) {
+  /* line 305, ../sass/partials/_portfolio.scss */
+  .portfolio.single h1 {
+    font-size: 2em;
+  }
+}
+/* line 314, ../sass/partials/_portfolio.scss */
 .portfolio.single .content {
   clear: both;
 }
-/* line 316, ../sass/partials/_portfolio.scss */
+/* line 319, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery:hover .next-slide, .portfolio.single .gallery:hover .prev-slide {
   display: block;
 }
 @media screen and (max-width: 700px) {
-  /* line 316, ../sass/partials/_portfolio.scss */
+  /* line 319, ../sass/partials/_portfolio.scss */
   .portfolio.single .gallery:hover .next-slide, .portfolio.single .gallery:hover .prev-slide {
     display: none;
   }
 }
-/* line 324, ../sass/partials/_portfolio.scss */
+/* line 327, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery, .portfolio.single div[id^="gallery-"] {
   float: right;
   width: 65%;
@@ -1040,12 +1046,12 @@ div.one-col .right .jacob-william span {
   padding-top: 10px;
 }
 @media screen and (max-width: 700px) {
-  /* line 324, ../sass/partials/_portfolio.scss */
+  /* line 327, ../sass/partials/_portfolio.scss */
   .portfolio.single .gallery, .portfolio.single div[id^="gallery-"] {
     width: 100%;
   }
 }
-/* line 335, ../sass/partials/_portfolio.scss */
+/* line 338, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .next-slide, .portfolio.single .gallery .prev-slide, .portfolio.single div[id^="gallery-"] .next-slide, .portfolio.single div[id^="gallery-"] .prev-slide {
   postion: relative;
   background: url("../../images/circle_small.png") no-repeat scroll left center/60px auto transparent;
@@ -1060,50 +1066,50 @@ div.one-col .right .jacob-william span {
   animation: 3s fas all;
 }
 @media screen and (max-width: 700px) {
-  /* line 335, ../sass/partials/_portfolio.scss */
+  /* line 338, ../sass/partials/_portfolio.scss */
   .portfolio.single .gallery .next-slide, .portfolio.single .gallery .prev-slide, .portfolio.single div[id^="gallery-"] .next-slide, .portfolio.single div[id^="gallery-"] .prev-slide {
     top: 150px;
   }
 }
-/* line 352, ../sass/partials/_portfolio.scss */
+/* line 355, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .prev-slide, .portfolio.single div[id^="gallery-"] .prev-slide {
   background: url("../../images/circle_small_left.png") no-repeat scroll left center/60px auto transparent;
   left: 0px;
 }
-/* line 357, ../sass/partials/_portfolio.scss */
+/* line 360, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .attachment-thumbnail, .portfolio.single div[id^="gallery-"] .attachment-thumbnail {
   height: 50px;
   width: 50px;
 }
-/* line 362, ../sass/partials/_portfolio.scss */
+/* line 365, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .slider-wrapper, .portfolio.single div[id^="gallery-"] .slider-wrapper {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
-/* line 367, ../sass/partials/_portfolio.scss */
+/* line 370, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .slider-wrapper .images, .portfolio.single div[id^="gallery-"] .slider-wrapper .images {
   overflow: visible;
   margin: 0 auto;
   text-align: center;
 }
-/* line 373, ../sass/partials/_portfolio.scss */
+/* line 376, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .slider-wrapper img, .portfolio.single div[id^="gallery-"] .slider-wrapper img {
   max-width: 100%;
   border: 0 none !important;
   display: none;
 }
-/* line 379, ../sass/partials/_portfolio.scss */
+/* line 382, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .slider-wrapper .current, .portfolio.single div[id^="gallery-"] .slider-wrapper .current {
   display: inline;
 }
-/* line 386, ../sass/partials/_portfolio.scss */
+/* line 389, ../sass/partials/_portfolio.scss */
 .portfolio.single .gallery .gallery-item, .portfolio.single div[id^="gallery-"].gallery-item {
   margin-right: 10px !important;
   width: auto !important;
   margin-bottom: 5px;
 }
-/* line 392, ../sass/partials/_portfolio.scss */
+/* line 395, ../sass/partials/_portfolio.scss */
 .portfolio.single .tag-wrapper {
   float: left;
   margin-bottom: 20px;
@@ -1111,13 +1117,13 @@ div.one-col .right .jacob-william span {
   padding-bottom: 20px;
   width: 100%;
 }
-/* line 400, ../sass/partials/_portfolio.scss */
+/* line 403, ../sass/partials/_portfolio.scss */
 .portfolio.single .tags {
   font-family: Vegur Light;
   font-style: italic;
   margin-bottom: 10px;
 }
-/* line 406, ../sass/partials/_portfolio.scss */
+/* line 409, ../sass/partials/_portfolio.scss */
 .portfolio.single .portfolio-link-back {
   background: url("../../images/circle_small_left.png") no-repeat scroll left center/20px auto transparent;
   display: block;
@@ -1128,12 +1134,12 @@ div.one-col .right .jacob-william span {
   color: #656565;
   font-size: .75em;
 }
-/* line 417, ../sass/partials/_portfolio.scss */
+/* line 420, ../sass/partials/_portfolio.scss */
 .portfolio.single .portfolio-link-back:hover {
   color: #d8df21;
   text-decoration: underline;
 }
-/* line 422, ../sass/partials/_portfolio.scss */
+/* line 425, ../sass/partials/_portfolio.scss */
 .portfolio.single .view-the-site {
   background: none repeat scroll 0 0 #d8df21;
   color: white;
@@ -1144,27 +1150,27 @@ div.one-col .right .jacob-william span {
   font-family: Vegur;
   font-size: 1.1em;
 }
-/* line 433, ../sass/partials/_portfolio.scss */
+/* line 436, ../sass/partials/_portfolio.scss */
 .portfolio.single .view-the-site:hover {
   background: #656565;
 }
-/* line 437, ../sass/partials/_portfolio.scss */
+/* line 440, ../sass/partials/_portfolio.scss */
 .portfolio.single .view-the-site.not-available {
   background: none repeat scroll 0 0 transparent;
   border: 1px solid;
   color: #656565;
 }
-/* line 443, ../sass/partials/_portfolio.scss */
+/* line 446, ../sass/partials/_portfolio.scss */
 .portfolio.single .view-the-site.not-available:hover {
   background: transparent;
 }
-/* line 447, ../sass/partials/_portfolio.scss */
+/* line 450, ../sass/partials/_portfolio.scss */
 .portfolio.single .portfolio-content {
   float: left;
   width: 30%;
 }
 @media screen and (max-width: 700px) {
-  /* line 447, ../sass/partials/_portfolio.scss */
+  /* line 450, ../sass/partials/_portfolio.scss */
   .portfolio.single .portfolio-content {
     width: 100%;
     margin-top: 20px;
@@ -1192,8 +1198,15 @@ div.one-col footer {
     text-align: center;
   }
 }
+@media screen and (max-width: 1000px) {
+  /* line 1, ../sass/partials/footer.scss */
+  div.one-col footer {
+    border-bottom: 0 none;
+    top: -9px;
+  }
+}
 
-/* line 16, ../sass/partials/footer.scss */
+/* line 20, ../sass/partials/footer.scss */
 footer {
   clear: both;
   border-bottom: 1px solid #323232;
@@ -1205,12 +1218,71 @@ footer {
   position: relative;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1000px) {
-  /* line 16, ../sass/partials/footer.scss */
+@media screen and (max-width: 400px) {
+  /* line 20, ../sass/partials/footer.scss */
   footer {
-    border-bottom: 0 none;
-    top: -9px;
+    line-height: 1.6em;
+    text-align: center;
   }
+}
+@media screen and (max-width: 640px) {
+  /* line 20, ../sass/partials/footer.scss */
+  footer {
+    padding: 10px 0;
+    top: 0;
+    border-top: 1px solid #656565;
+    margin-top: 70px;
+    border-bottom: 0 none;
+  }
+}
+
+/* line 4, ../sass/partials/term.scss */
+.tax-jws_portfolio h1 {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+  /* line 4, ../sass/partials/term.scss */
+  .tax-jws_portfolio h1 {
+    font-size: 2em;
+  }
+}
+/* line 10, ../sass/partials/term.scss */
+.tax-jws_portfolio article {
+  border-bottom: 1px solid;
+  margin-bottom: 40px;
+}
+/* line 15, ../sass/partials/term.scss */
+.tax-jws_portfolio article h2 {
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 700px) {
+  /* line 15, ../sass/partials/term.scss */
+  .tax-jws_portfolio article h2 {
+    font-size: 1.5em;
+  }
+}
+/* line 23, ../sass/partials/term.scss */
+.tax-jws_portfolio article h2 a {
+  background: none repeat scroll 0 0 #d8df21;
+  color: white;
+  display: block;
+  float: left;
+  padding: 7px 13px;
+}
+/* line 31, ../sass/partials/term.scss */
+.tax-jws_portfolio article h2 a:hover {
+  background-color: #656565;
+  color: white;
+}
+/* line 38, ../sass/partials/term.scss */
+.tax-jws_portfolio article .excerpt {
+  clear: both;
+  margin-bottom: 20px;
+}
+/* line 44, ../sass/partials/term.scss */
+.tax-jws_portfolio article:last-of-type {
+  border-bottom: 0 none;
 }
 
 /* line 6, ../sass/main.scss */

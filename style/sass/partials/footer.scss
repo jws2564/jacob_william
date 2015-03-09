@@ -11,6 +11,10 @@ div.one-col footer{
 		line-height: 1.6em;
 		text-align: center;
 	}
+	@media screen and (max-width: 1000px){
+		border-bottom: 0 none;
+		top: -9px;
+	}
 }
 
 footer{	
@@ -23,8 +27,19 @@ footer{
 		padding-bottom: 3px;
 		position: relative;
 		margin-bottom: 50px;
-		@media screen and (max-width: 1000px){
-			border-bottom: 0 none;
-			top: -9px;
+		
+		@media screen and (max-width: 400px){
+			line-height: 1.6em;
+			text-align: center;
 		}
+
+		@media screen and (max-width: 640px){
+			padding: 10px 0;
+	    	top: 0;	
+	    	border-top: 1px solid $light-gray;
+	    	margin-top: 70px;
+	    	border-bottom: 0 none;
+		}
+		
+		
 	}
